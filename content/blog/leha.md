@@ -9,3 +9,7 @@ description: Leha
 **laskdfjiaojsef**kjwqe**sdfefew**
 
 \#Leha
+
+<i>Plasdf</i>
+
+<nuxt-link to="/">click me!</nuxt-link>
