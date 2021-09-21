@@ -11,5 +11,22 @@
         "key": "asdfasdf"
       }
     }
+  ],
+  "investmentModels": [
+    {
+      "name": "comfort",
+      "title": "Пул комфорт",
+      "table": [
+        {
+          "title": "I Этап - покупка автомобиля",
+          "num": 1080000,
+          "selected": true
+        },
+        {
+          "title": "Цена подготовленного Kia Rio 1.4 at comfort",
+          "num": 1480000
+        }
+      ]
+    }
   ]
 }
