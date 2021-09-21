@@ -7,12 +7,9 @@
   "img": "uploads/логотип_основная_версия_чб_1_zurashvili_branding.png",
   "galleryImages": [
     {
-      "titles": "aslkdjfasdfioow",
-      "title": "asdfsadf"
-    },
-    {
-      "titles": "asdfoifjqwe2",
-      "title": "asdfasdf"
+      "titles": {
+        "key": "asdfasdf"
+      }
     }
   ]
 }
