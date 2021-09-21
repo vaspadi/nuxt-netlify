@@ -1,13 +1,1 @@
- investmentModels = [
-  {
-    "title": "Пул эконом, комфорт",
-    "name": "comfort",
-    "table": [
-      {
-        "title": "I Этап - покупка автомобиля",
-        "num": 1080000,
-        "selected": true
-      }
-    ]
-  }
-]
+
