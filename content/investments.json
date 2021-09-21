@@ -19,6 +19,17 @@
           "selected": true
         }
       ]
+    },
+    {
+      "title": "Пул комфорт+",
+      "name": "comfort-plus",
+      "table": [
+        {
+          "title": "I этап - покупка автомобиля",
+          "num": 1480000,
+          "selected": true
+        }
+      ]
     }
   ]
 }
