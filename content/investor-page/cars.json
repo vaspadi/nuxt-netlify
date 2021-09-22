@@ -1,23 +1,11 @@
 {
-  "investments": [
-    {
-      "price": 1345547,
-      "profit": 40743,
-      "profitCapital": 27
-    },
-    {
-      "profitCapital": 26,
-      "profit": 21504,
-      "price": 500000
-    }
-  ],
-  "carClasses": [
+  "classes": [
     {
       "name": "Эконом, Комфорт",
       "value": "comfort"
     },
     {
-      "name": "Комфорт +",
+      "name": "Комфорт+",
       "value": "comfort-plus"
     }
   ],
