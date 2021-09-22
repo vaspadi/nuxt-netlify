@@ -1,1 +1,9 @@
-{}
+{
+  "investments": [
+    {
+      "price": 1345547,
+      "profit": 40743,
+      "profitCapital": 27
+    }
+  ]
+}
