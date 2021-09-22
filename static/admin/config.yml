@@ -18,7 +18,7 @@ collections:
     fields:
       - { label: 'Заголовок страницы', name: 'metaTitle', widget: 'string' }
       - { label: 'Название файла', name: 'slug', widget: 'string', default: 'hr-manager' }
-      - { label: 'Картинка', name: 'img', widget: 'image' }
+      - { label: 'Картинка', name: 'img', widget: 'image', media_folder: /assets/img/vacancies }
       - { label: 'Заголовок вакансии', name: 'title', widget: 'string' }
       - { label: 'Описание', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -34,7 +34,7 @@ collections:
     fields:
       - { label: 'Заголовок страницы', name: 'metaTitle', widget: 'string' }
       - { label: 'Название файла', name: 'slug', widget: 'string', default: 'choose-company' }
-      - { label: 'Картинка', name: 'img', widget: 'image' }
+      - { label: 'Картинка', name: 'img', widget: 'image', media_folder: /assets/img/news }
       - { label: 'Заголовок новости', name: 'title', widget: 'string' }
       - { label: 'Описание', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -96,6 +96,7 @@ collections:
               - label: Картинка
                 name: img
                 widget: image
+                media_folder: /assets/img/cars
 
               - label: Класс машины
                 name: type
@@ -136,6 +137,7 @@ collections:
                   - label: Картинка для таба
                     name: img
                     widget: image
+                    media_folder: /assets/img/cars
 
           - label: "Таблицы"
             name: "investmentsModels"
@@ -172,3 +174,55 @@ collections:
                   widget: boolean
                   required: false
 
+      - label: Истории инвесторов
+        name: investors
+        file: content/investor-page/investors.json
+        editor:
+          preview: false
+        fields:
+          - label: Истории инвесторов
+            name: investors
+            widget: list
+            fields:
+              - label: ФИО
+                name: name
+                widget: string
+
+              - label: Сумма инвистиций
+                name: investments
+                widget: number
+                hint: рублей
+
+              - label: Количество доходных машин
+                name: cars
+                widget: number
+
+              - label: Прибыль в месяц
+                name: income
+                widget: number
+                hint: рублей
+
+              - label: Идентификатор видео с youtube
+                name: video
+                widget: string
+                hint: youtube.com/watch?v= >>>> cQDeUcGxy48 <<<<
+
+      - label: Видеоряд
+        name: videoGallery
+        file: content/investor-page/videoGallery.json
+        editor:
+          preview: false
+        fields:
+          - label: Видеоряд
+            name: videos
+            widget: list
+            fields:
+              - label: Заголовок
+                name: name
+                widget: string
+                required: false
+
+              - label: Идентификатор видео с youtube
+                name: id
+                widget: string
+                hint: youtube.com/watch?v= >>>> cQDeUcGxy48 <<<<
