@@ -1,0 +1,12 @@
+{
+  "classes": [
+    {
+      "name": "Эконом, Комфорт",
+      "value": "comfort"
+    },
+    {
+      "name": "Комфорт+",
+      "value": "comfort-plus"
+    }
+  ]
+}
