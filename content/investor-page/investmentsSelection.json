@@ -24,7 +24,7 @@
   "cars": [
     {
       "title": "Kia Rio",
-      "img": "/cars/kia-cerato-comfort-plus.png",
+      "img": "/assets/img/cars/kia-cerato-comfort-plus.png",
       "type": "comfort"
     }
   ]
