@@ -1,22 +1,79 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: vaspadi/nuxt-netlify
   branch: master # Branch to update (optional; defaults to master)
 
-media_folder: static/img
-public_folder: /img
+media_folder: assets/img/uploads
+public_folder: uploads
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'vacancies'
+    label: 'Вакансии'
+    folder: 'content/vacancies'
     format: 'frontmatter'
     create: true
-    slug: '{{metaTitle}}'
+    slug: '{{fields.slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'MetaTitle', name: 'metaTitle', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Заголовок страницы', name: 'metaTitle', widget: 'string' }
+      - { label: 'Название файла', name: 'slug', widget: 'string', default: 'hr-manager' }
+      - { label: 'Картинка', name: 'img', widget: 'image' }
+      - { label: 'Заголовок вакансии', name: 'title', widget: 'string' }
+      - { label: 'Описание', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'news'
+    label: 'Новости'
+    folder: 'content/news'
+    format: 'frontmatter'
+    create: true
+    slug: '{{fields.slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Заголовок страницы', name: 'metaTitle', widget: 'string' }
+      - { label: 'Название файла', name: 'slug', widget: 'string', default: 'choose-company' }
+      - { label: 'Картинка', name: 'img', widget: 'image' }
+      - { label: 'Заголовок новости', name: 'title', widget: 'string' }
+      - { label: 'Описание', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'investments'
+    label: 'Инвестиции'
+    folder: 'content'
+    format: 'json'
+    create: false
+    slug: 'investments'
+    editor:
+      preview: false
+    fields:
+      - label: Название документа
+        name: name
+        widget: string
+      - label: "Таблицы"
+        name: "investmentModels"
+        widget: "list"
+        fields:
+        - label: 'Название таблицы'
+          name: 'title'
+          widget: 'string'
+        - label: 'slug'
+          name: name
+          widget: select
+          options: ['comfort', 'comfort-plus']
+        - label: Строка
+          name: table
+          widget: list
+          minimize_collapsed: true
+          fields:
+            - label: Описание
+              name: title
+              widget: string
+            - label: Цена
+              name: num
+              widget: number
+            - label: Выделить
+              name: selected
+              widget: boolean
+              required: false
