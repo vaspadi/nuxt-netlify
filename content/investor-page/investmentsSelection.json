@@ -20,5 +20,12 @@
       "name": "Комфорт +",
       "value": "comfort-plus"
     }
+  ],
+  "cars": [
+    {
+      "title": "Kia Rio",
+      "img": "uploads/иконка_логотип_разработка_it_решений_zurashvili_branding.png",
+      "type": "comfort"
+    }
   ]
 }
