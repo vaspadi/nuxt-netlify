@@ -39,41 +39,46 @@ collections:
       - { label: 'Описание', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: 'investments'
-    label: 'Инвестиции'
-    folder: 'content'
-    format: 'json'
-    create: false
-    slug: 'investments'
-    editor:
-      preview: false
-    fields:
-      - label: Название документа
-        name: name
-        widget: string
-      - label: "Таблицы"
-        name: "investmentModels"
-        widget: "list"
+  - name: 'investor-page'
+    label: 'Страница: Стать инвестором'
+#    folder: 'content/investor-page'
+#    format: 'json'
+#    create: false
+#    slug: 'investments'
+#    editor:
+#      preview: false
+    files:
+      - label: Модели инвестиций
+        name: investmentsModels
+        file: content/investor-page/investmentsModels.json
         fields:
-        - label: 'Название таблицы'
-          name: 'title'
-          widget: 'string'
-        - label: 'slug'
-          name: name
-          widget: select
-          options: ['comfort', 'comfort-plus']
-        - label: Строка
-          name: table
-          widget: list
-          minimize_collapsed: true
-          fields:
-            - label: Описание
-              name: title
-              widget: string
-            - label: Цена
-              name: num
-              widget: number
-            - label: Выделить
-              name: selected
-              widget: boolean
-              required: false
+          - label: Название документа
+            name: name
+            widget: string
+          - label: "Таблицы"
+            name: "investmentModels"
+            widget: "list"
+            fields:
+            - label: 'Название таблицы'
+              name: 'title'
+              widget: 'string'
+            - label: 'slug'
+              name: name
+              widget: select
+              options: ['comfort', 'comfort-plus']
+            - label: Строка
+              name: table
+              widget: list
+              minimize_collapsed: true
+              fields:
+                - label: Описание
+                  name: title
+                  widget: string
+                - label: Цена
+                  name: num
+                  widget: number
+                - label: Выделить
+                  name: selected
+                  widget: boolean
+                  required: false
+
