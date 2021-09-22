@@ -4,6 +4,11 @@
       "price": 1345547,
       "profit": 40743,
       "profitCapital": 27
+    },
+    {
+      "profitCapital": 26,
+      "profit": 21504,
+      "price": 500000
     }
   ]
 }
