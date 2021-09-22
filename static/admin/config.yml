@@ -56,14 +56,17 @@ collections:
                 name: price
                 widget: number
                 min: 0
+                hint: рублей
               - label: Доход от
                 name: profit
                 widget: number
                 min: 0
+                hint: руб/мес
               - label: Доходность на вложенный капиталл
                 name: profitCapital
                 widget: number
                 min: 0
+                hint: процентов
 
       - label: Модели инвестиций
         name: investmentsModels
@@ -71,18 +74,43 @@ collections:
         editor:
           preview: false
         fields:
+          - label: Табы переключения таблиц
+            name: investmentTypes
+            widget: object
+            collapsed: true
+            fields:
+              - label: Заголовок всех табов
+                name: title
+                widget: string
+              - label: Табы
+                name: buttons
+                widget: list
+                fields:
+                  - label: Заговок
+                    name: title
+                    widget: string
+                  - label: slug
+                    name: type
+                    widget: string
+                  - label: Картинка для таба
+                    name: img
+                    widget: image
+
           - label: "Таблицы"
             name: "investmentsModels"
             widget: "list"
-            collapsed: false
             fields:
             - label: 'Название таблицы'
               name: 'title'
               widget: 'string'
-            - label: 'slug'
+            - label: Кнопка таба
               name: name
-              widget: select
-              options: ['comfort', 'comfort-plus']
+              widget: relation
+              collection: investor-page
+              file: investmentsModels
+              value_field: investmentTypes.buttons.*.type
+              search_fields: [investmentTypes.buttons.*.title, investmentTypes.buttons.*.type]
+              display_fields: [investmentTypes.buttons.*.title]
             - label: Строка
               name: table
               widget: list
