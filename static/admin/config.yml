@@ -51,22 +51,60 @@ collections:
           - label: Типы инвестиций
             name: investments
             widget: list
+            minimize_collapsed: true
             fields:
               - label: Объем инвестиций от
                 name: price
                 widget: number
                 min: 0
                 hint: рублей
+
               - label: Доход от
                 name: profit
                 widget: number
                 min: 0
                 hint: руб/мес
+
               - label: Доходность на вложенный капиталл
                 name: profitCapital
                 widget: number
                 min: 0
                 hint: процентов
+
+          - label: Классы машин
+            name: carClasses
+            widget: list
+            minimize_collapsed: true
+            fields:
+              - label: Заголовок
+                name: name
+                widget: string
+
+              - label: slug
+                name: value
+                widget: string
+
+          - label: Машины
+            name: cars
+            widget: list
+            minimize_collapsed: true
+            fields:
+              - label: Название
+                name: title
+                widget: string
+
+              - label: Картинка
+                name: img
+                widget: image
+
+              - label: Класс машины
+                name: type
+                widget: relation
+                collection: investor-page
+                file: investmentsSelection
+                value_field: carClasses.*.value
+                search_fields: [ carClasses.*.name, carClasses.*.value ]
+                display_fields: [ carClasses.*.name ]
 
       - label: Модели инвестиций
         name: investmentsModels
@@ -82,6 +120,7 @@ collections:
               - label: Заголовок всех табов
                 name: title
                 widget: string
+
               - label: Табы
                 name: buttons
                 widget: list
@@ -89,9 +128,11 @@ collections:
                   - label: Заговок
                     name: title
                     widget: string
+
                   - label: slug
                     name: type
                     widget: string
+
                   - label: Картинка для таба
                     name: img
                     widget: image
@@ -103,6 +144,7 @@ collections:
             - label: 'Название таблицы'
               name: 'title'
               widget: 'string'
+
             - label: Кнопка таба
               name: name
               widget: relation
@@ -111,6 +153,7 @@ collections:
               value_field: investmentTypes.buttons.*.type
               search_fields: [investmentTypes.buttons.*.title, investmentTypes.buttons.*.type]
               display_fields: [investmentTypes.buttons.*.title]
+
             - label: Строка
               name: table
               widget: list
@@ -119,9 +162,11 @@ collections:
                 - label: Описание
                   name: title
                   widget: string
+
                 - label: Цена
                   name: num
                   widget: number
+
                 - label: Выделить
                   name: selected
                   widget: boolean
