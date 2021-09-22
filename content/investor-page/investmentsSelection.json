@@ -24,7 +24,7 @@
   "cars": [
     {
       "title": "Kia Rio",
-      "img": "uploads/иконка_логотип_разработка_it_решений_zurashvili_branding.png",
+      "img": "/assets/img/cars/kia-rio-econom.png",
       "type": "comfort"
     }
   ]
