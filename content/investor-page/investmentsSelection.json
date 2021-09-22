@@ -10,5 +10,15 @@
       "profit": 21504,
       "price": 500000
     }
+  ],
+  "carClasses": [
+    {
+      "name": "Эконом, Комфорт",
+      "value": "comfort"
+    },
+    {
+      "name": "Комфорт +",
+      "value": "comfort-plus"
+    }
   ]
 }
