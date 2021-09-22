@@ -41,23 +41,40 @@ collections:
 
   - name: 'investor-page'
     label: 'Страница: Стать инвестором'
-#    folder: 'content/investor-page'
-#    format: 'json'
-#    create: false
-#    slug: 'investments'
-#    editor:
-#      preview: false
     files:
+      - label: Выбор инвестиций
+        name: investmentsSelection
+        file: content/investor-page/investmentsSelection.json
+        editor:
+          preview: false
+        fields:
+          - label: Типы инвестиций
+            name: investments
+            widget: list
+            fields:
+              - label: Объем инвестиций от
+                name: price
+                widget: number
+                min: 0
+              - label: Доход от
+                name: profit
+                widget: number
+                min: 0
+              - label: Доходность на вложенный капиталл
+                name: profitCapital
+                widget: number
+                min: 0
+
       - label: Модели инвестиций
         name: investmentsModels
         file: content/investor-page/investmentsModels.json
+        editor:
+          preview: false
         fields:
-          - label: Название документа
-            name: name
-            widget: string
           - label: "Таблицы"
-            name: "investmentModels"
+            name: "investmentsModels"
             widget: "list"
+            collapsed: false
             fields:
             - label: 'Название таблицы'
               name: 'title'
