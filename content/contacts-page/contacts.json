@@ -23,6 +23,19 @@
     {
       "title": "Череповец",
       "name": "cherepovet"
-     }
+    }
+  ],
+  "contacts": [
+    {
+      "city": "kaliningrad",
+      "telephones": [
+        {
+          "telDescription": "+7 (4012) 92-08-83",
+          "tel": "+74012920883"
+        }
+      ],
+      "addresses": "г. Калининград, ул. Мусоргского 10, корпус 2, офис 2",
+      "email": "taxi.39@ya.ru"
+    }
   ]
 }
