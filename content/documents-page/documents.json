@@ -1,0 +1,11 @@
+{
+  "documentsGroup": [
+    {
+      "img": "/assets/img/documents/word.png",
+      "path": "/static/documents/laravel_-команды-настроек-в-консоли.docx",
+      "name": "Laravel_ Команды настроек - в консоли",
+      "investors": true,
+      "drivers": true
+    }
+  ]
+}
