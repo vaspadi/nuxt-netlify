@@ -9,5 +9,12 @@
       "title": "Подключение водителей"
     }
   ],
-  "employees": []
+  "employees": [
+    {
+      "name": "Башан Надежда",
+      "position": "Менеджер по работе с инвесторами",
+      "photo": "/assets/img/employees/bashan-nadezda.jpg",
+      "group": "teem-member"
+    }
+  ]
 }
