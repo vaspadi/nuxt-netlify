@@ -12,8 +12,7 @@
   "documents": [
     {
       "investors": [
-        "investors",
-        "drivers"
+        "investors"
       ],
       "path": "/static/documents/laravel_-команды-настроек-в-консоли.docx",
       "img": "/assets/img/documents/word.png",
