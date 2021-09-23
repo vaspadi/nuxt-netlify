@@ -25,30 +25,5 @@
       "name": "cherepovet"
     }
   ],
-  "contacts": [
-    {
-      "city": "kaliningrad",
-      "telephones": [
-        {
-          "telDescription": "+7 (4012) 92-08-83",
-          "tel": "+74012920883"
-        }
-      ],
-      "addresses": "г. Калининград, ул. Мусоргского 10, корпус 2, офис 2",
-      "email": "taxi.39@ya.ru",
-      "markerCoors": "{\"type\":\"Point\",\"coordinates\":[20.5116935,54.6711186]}"
-    },
-    {
-      "city": "murmansk",
-      "email": "sadfasdf",
-      "addresses": "asdfsadf",
-      "telephones": [
-        {
-          "telDescription": "asdfasdf",
-          "tel": "asdfasdf"
-        }
-      ],
-      "markerCoors": "{\"type\":\"Point\",\"coordinates\":[20.5116935,54.6711186]}"
-    }
-  ]
+  "contacts": []
 }
