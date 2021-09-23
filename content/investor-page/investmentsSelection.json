@@ -40,5 +40,22 @@
       "value": "comfort-plus",
       "name": "Комфорт +"
     }
+  ],
+  "cars": [
+    {
+      "title": "Kia Rio",
+      "img": "/assets/img/cars/kia-rio-econom.png",
+      "type": "comfort"
+    },
+    {
+      "title": "Hyundai Solaris",
+      "img": "/assets/img/cars/hyundai-solaris-comfort.png",
+      "type": "comfort"
+    },
+    {
+      "title": "Kia Cerato",
+      "img": "/assets/img/cars/kia-cerato-comfort-plus.png",
+      "type": "comfort-plus"
+    }
   ]
 }
