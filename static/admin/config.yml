@@ -20,12 +20,12 @@ collections:
       value: false
     fields:
       - { label: 'Заголовок страницы', name: 'metaTitle', widget: 'string' }
-      - { label: 'Название файла', name: 'slug', widget: 'string', default: 'hr-manager' }
+      - { label: 'Название файла', name: 'slug', widget: 'string', hint: Переименовать файл нельзя }
       - { label: 'Картинка', name: 'img', widget: 'image', media_folder: /assets/img/vacancies }
       - { label: 'Заголовок вакансии', name: 'title', widget: 'string' }
       - { label: 'Описание', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Добавить в архив', name: 'archive', widget: 'boolean' }
+      - { label: 'Добавить в архив', name: 'archive', widget: 'boolean', default: false, required: false }
 
   - name: vacancies-archive
     label: Вакансии - архив
@@ -52,7 +52,7 @@ collections:
       preview: false
     fields:
       - { label: 'Заголовок страницы', name: 'metaTitle', widget: 'string' }
-      - { label: 'Название файла', name: 'slug', widget: 'string', default: 'choose-company' }
+      - { label: 'Название файла', name: 'slug', widget: 'string', hint: Переименовать файл нельзя }
       - { label: 'Картинка', name: 'img', widget: 'image', media_folder: /assets/img/news }
       - { label: 'Заголовок новости', name: 'title', widget: 'string' }
       - { label: 'Описание', name: 'description', widget: 'string' }
@@ -283,27 +283,45 @@ collections:
           preview: false
         fields:
           - label: Группы документов
-            name: documentsGroup
+            name: documentsGroups
+            widget: list
+            minimize_collapsed: true
+            fields:
+              - label: Заголовок
+                name: title
+                widget: string
+
+              - label: slug
+                name: name
+                widget: string
+
+          - label: Документы
+            name: documents
             widget: list
             fields:
               - label: Заголовок на сайте
                 name: name
                 widget: string
 
+              - label: Картинка
+                name: img
+                widget: image
+                media_folder: /assets/img/documents
+
               - label: Документ
                 name: path
                 widget: file
                 media_folder: /static/documents
 
-              - label: Инвесторам
+              - label: Группы
                 name: investors
-                widget: boolean
-                required: false
-
-              - label: Водителям
-                name: drivers
-                widget: boolean
-                required: false
+                widget: relation
+                multiple: true
+                collection: documents-page
+                file: documents
+                value_field: documentsGroups.*.name
+                search_fields: [ documentsGroups.*.title, documentsGroups.*.name ]
+                display_fields: [ documentsGroups.*.title ]
 
   - name: structure-page
     label: 'Страница: Структура'
@@ -407,8 +425,25 @@ collections:
                 widget: string
 
               - label: Адрес
-                name: addresses
+                name: address
                 fields:
                   - label: Адрес
                     name: address
                     widget: string
+
+              - label: zoom карты
+                name: zoom
+                widget: number
+                default: 18
+
+              - label: Координаты
+                name: coords
+                widget: object
+                fields:
+                  - label: X координата на карте
+                    name: x
+                    widget: number
+
+                  - label: Y координата на карте
+                    name: y
+                    widget: number
