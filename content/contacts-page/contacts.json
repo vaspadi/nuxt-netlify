@@ -128,6 +128,19 @@
       "email": "taxi.39@ya.ru",
       "address": "г. Великий Новгород, пр. Александра Корсунова 28а, офис 27/2, этаж 2",
       "coords": "{\"type\":\"Point\",\"coordinates\":[31.240486, 58.545387]}"
+    },
+    {
+      "zoom": 18,
+      "coords": "{\"type\":\"Point\",\"coordinates\":[68.1396103,48.5074357]}",
+      "email": "vaspadi.pashka1@gmail.com",
+      "address": "celtnieku iela",
+      "city": "petrozavodsk",
+      "telephones": [
+        {
+          "telDescription": "sdfsas",
+          "tel": "sadfasdf"
+        }
+      ]
     }
   ]
 }
