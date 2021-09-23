@@ -15,6 +15,9 @@ collections:
     slug: '{{fields.slug}}'
     editor:
       preview: false
+    filter:
+      field: archive
+      value: false
     fields:
       - { label: 'Заголовок страницы', name: 'metaTitle', widget: 'string' }
       - { label: 'Название файла', name: 'slug', widget: 'string', default: 'hr-manager' }
@@ -22,6 +25,22 @@ collections:
       - { label: 'Заголовок вакансии', name: 'title', widget: 'string' }
       - { label: 'Описание', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Добавить в архив', name: 'archive', widget: 'boolean' }
+
+  - name: vacancies-archive
+    label: Вакансии - архив
+    folder: content/vacancies
+    format: frontmatter
+    create: false
+    editor:
+      preview: false
+    filter:
+      field: archive
+      value: true
+    fields:
+      - label: Добавить в архив
+        name: archive
+        widget: boolean
 
   - name: 'news'
     label: 'Новости'
@@ -37,9 +56,36 @@ collections:
       - { label: 'Картинка', name: 'img', widget: 'image', media_folder: /assets/img/news }
       - { label: 'Заголовок новости', name: 'title', widget: 'string' }
       - { label: 'Описание', name: 'description', widget: 'string' }
+      - { label: 'Добавить на главную страницу', name: indexPage, widget: boolean, required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: 'investor-page'
+  - name: index-page
+    label: 'Страница: Главная'
+    files:
+      - label: Стать инвестором
+        name: becomeInvestor
+        file: content/index-page/becomeInvestor.json
+        editor:
+          preview: false
+        fields:
+          - label: Стать инвестором
+            name: becomeInvestor
+            widget: object
+            fields:
+              - label: Заголовок
+                name: title
+                widget: string
+
+              - label: Текст
+                name: text
+                widget: text
+
+              - label: Идентификатор видео с youtube
+                name: video
+                widget: string
+                hint: youtube.com/watch?v= >>>> cQDeUcGxy48 <<<<
+
+  - name: investor-page
     label: 'Страница: Стать инвестором'
     files:
       - label: Выбор инвестиций
@@ -226,3 +272,143 @@ collections:
                 name: id
                 widget: string
                 hint: youtube.com/watch?v= >>>> cQDeUcGxy48 <<<<
+
+  - name: documents-page
+    label: 'Страница: Документы'
+    files:
+      - label: Документы
+        name: documents
+        file: content/documents-page/documents.json
+        editor:
+          preview: false
+        fields:
+          - label: Группы документов
+            name: documentsGroup
+            widget: list
+            fields:
+              - label: Заголовок на сайте
+                name: name
+                widget: string
+
+              - label: Документ
+                name: path
+                widget: file
+                media_folder: /static/documents
+
+              - label: Инвесторам
+                name: investors
+                widget: boolean
+                required: false
+
+              - label: Водителям
+                name: drivers
+                widget: boolean
+                required: false
+
+  - name: structure-page
+    label: 'Страница: Структура'
+    files:
+      - label: Сотрудники
+        name: employees
+        file: content/structure-page/employees.json
+        editor:
+          preview: false
+        fields:
+          - label: Группы сотрудников
+            name: employeesGroups
+            widget: list
+            minimize_collapsed: true
+            fields:
+              - label: Название группы
+                name: title
+                widget: string
+
+              - label: slug
+                name: name
+                widget: string
+
+          - label: Сотрудники
+            name: employees
+            widget: list
+            fields:
+              - label: Имя
+                name: name
+                widget: string
+
+              - label: Должность
+                name: position
+                widget: string
+
+              - label: Фотография
+                name: photo
+                widget: image
+                media_folder: /assets/img/employees
+
+              - label: Группа
+                name: group
+                widget: relation
+                collection: structure-page
+                file: employees
+                value_field: employeesGroups.*.name
+                search_fields: [ employeesGroups.*.title, employeesGroups.*.name ]
+                display_fields: [ employeesGroups.*.title ]
+
+  - name: contacts-page
+    label: 'Страница: Контакты'
+    files:
+      - label: Контакты
+        name: contacts
+        file: content/contacts-page/contacts.json
+        editor:
+          preview: false
+        fields:
+          - label: Города
+            name: contactsCities
+            widget: list
+            minimize_collapsed: true
+            fields:
+              - label: Название города
+                name: title
+                widget: string
+
+              - label: slug
+                name: name
+                widget: string
+
+          - label: Контакты
+            name: contacts
+            widget: list
+            fields:
+              - label: Город
+                name: city
+                widget: relation
+                collection: contacts-page
+                file: contacts
+                value_field: contactsCities.*.name
+                search_fields: [ contactsCities.*.title, contactsCities.*.name ]
+                display_fields: [ contactsCities.*.title ]
+
+              - label: Телефон
+                name: telephones
+                widget: list
+                fields:
+                  - label: Описание
+                    name: telDescription
+                    widget: string
+                    hint: '+7 (8112) 29-60-01'
+
+                  - label: Ссылка
+                    name: tel
+                    widget: string
+                    hint: '+78112296001'
+
+              - label: Почта
+                name: email
+                widget: string
+
+              - label: Адрес
+                name: addresses
+                fields:
+                  - label: Адрес
+                    name: address
+                    widget: string
