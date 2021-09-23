@@ -9,10 +9,6 @@
       "title": "Петрозаводск"
     },
     {
-      "title": "Сыктывкар",
-      "name": "syktyvkar"
-    },
-    {
       "title": "Мурманск",
       "name": "murmansk"
     },
@@ -32,18 +28,18 @@
   "contacts": [
     {
       "zoom": 18,
-      "city": "syktyvkar",
+      "city": "kaliningrad",
       "telephones": [
         {
-          "telDescription": "sadfasdf",
-          "tel": "asdf"
+          "telDescription": "+7 (4012) 92-08-83",
+          "tel": "+74012920883"
         }
       ],
-      "email": "asdf",
-      "address": "asdf",
+      "email": "taxi.39@ya.ru",
+      "address": "г. Калининград, ул. Мусоргского 10, корпус 2, офис 2",
       "coords": {
-        "x": 3,
-        "y": 2
+        "x": 54.6711186,
+        "y": 20.5116935
       }
     }
   ]
