@@ -36,8 +36,94 @@
         }
       ],
       "email": "taxi.39@ya.ru",
-      "addresses": "г. Калининград, ул. Мусоргского 10, корпус 2, офис 2",
-      "coords": "{\"type\":\"Point\",\"coordinates\":[46.0842905,59.1975013]}"
+      "address": "г. Калининград, ул. Мусоргского 10, корпус 2, офис 2",
+      "coords": "{\"type\":\"Point\",\"coordinates\":[20.5116935, 54.6711186]}"
+    },
+    {
+      "zoom": 18,
+      "city": "petrozavodsk",
+      "telephones": [
+        {
+          "telDescription": "+7 (8142) 26-26-30",
+          "tel": "+78142262630"
+        },
+        {
+          "telDescription": "+7 (921) 452-63-97",
+          "tel": "+79214526397"
+        }
+      ],
+      "email": "taxi.39@ya.ru",
+      "address": "г. Петрозаводск, ул. Повенецкая 16, офис 5, этаж 2",
+      "coords": "{\"type\":\"Point\",\"coordinates\":[34.352097, 61.772033]}"
+    },
+    {
+      "zoom": 18,
+      "city": "cherepovets",
+      "telephones": [
+        {
+          "telDescription": "+7 (8202) 63-24-06",
+          "tel": "+78202632406"
+        },
+        {
+          "telDescription": "+7 (921) 253-24-06",
+          "tel": "+79212532406"
+        }
+      ],
+      "email": "taxi.39@ya.ru",
+      "address": "59.124723, 37.889376",
+      "coords": "{\"type\":\"Point\",\"coordinates\":[37.889376, 59.124723]}"
+    },
+    {
+      "zoom": 18,
+      "city": "murmansk",
+      "telephones": [
+        {
+          "telDescription": "+7 (8152) 65-50-28",
+          "tel": "+78152655028"
+        }
+      ],
+      "email": "taxi.39@ya.ru",
+      "address": "г. Мурманск, улб Дзержинского 4, офис 307/2",
+      "coords": "{\"type\":\"Point\",\"coordinates\":[33.067255, 68.963544]}"
+    },
+    {
+      "zoom": 18,
+      "city": "pskov",
+      "telephones": [
+        {
+          "telDescription": "+7 (8112) 29-60-01",
+          "tel": "+78112296001"
+        }
+      ],
+      "email": "taxi.39@ya.ru",
+      "address": "г. Псков, пр. Октябрьский 56Г, офис 415",
+      "coords": "{\"type\":\"Point\",\"coordinates\":[28.367871, 57.810429]}"
+    },
+    {
+      "zoom": 18,
+      "city": "syktyvkar",
+      "telephones": [
+        {
+          "telDescription": "+7 (8212) 28-83-32",
+          "tel": "+78212288332"
+        }
+      ],
+      "email": "taxi.39@ya.ru",
+      "address": "г. Сыктывкар, Гаражная 9, офис 409, БЦ Союз",
+      "coords": "{\"type\":\"Point\",\"coordinates\":[50.821316, 61.656746]}"
+    },
+    {
+      "zoom": 18,
+      "city": "veliky-novgorod",
+      "telephones": [
+        {
+          "telDescription": "+7 (8162) 68-07-47",
+          "tel": "+78162680747"
+        }
+      ],
+      "email": "taxi.39@ya.ru",
+      "address": "г. Великий Новгород, пр. Александра Корсунова 28а, офис 27/2, этаж 2",
+      "coords": "{\"type\":\"Point\",\"coordinates\":[31.240486, 58.545387]}"
     }
   ]
 }
