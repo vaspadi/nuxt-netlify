@@ -7,6 +7,22 @@
     {
       "name": "petrozavodsk",
       "title": "Петрозаводск"
-    }
+    },
+    {
+      "title": "Мурманск",
+      "name": "murmansk"
+    },
+    {
+      "title": "Великий Новгород",
+      "name": "veliky-novgorod"
+    },
+    {
+      "title": "Псков",
+      "name": "pskov"
+    },
+    {
+      "title": "Череповец",
+      "name": "cherepovet"
+     }
   ]
 }
