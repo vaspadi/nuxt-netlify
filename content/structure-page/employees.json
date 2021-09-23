@@ -8,5 +8,85 @@
       "name": "connected-driver",
       "title": "Подключение водителей"
     }
+  ],
+  "employees": [
+    {
+      "name": "Башан Надежда",
+      "position": "Менеджер по работе с инвесторами",
+      "photo": "employees/bashan-nadezda.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Бектяшкин Павел",
+      "position": "Сотрудник сервиса",
+      "photo": "employees/bektashkin-pavel.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Гузий Сергей",
+      "position": "Старший менеджер по работе с клиентами",
+      "photo": "employees/guzij-sergej.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Зиненко Никита",
+      "position": "Менеджер по работе с водителями",
+      "photo": "employees/zinenko-nikita.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Кавко Михаил",
+      "position": "Менеджер по работе с водителями",
+      "photo": "employees/kavko-mihail.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Крутелев Дмитрий",
+      "position": "Технический директор",
+      "photo": "employees/krutelev-dmitrij.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Лукашов Ярослав",
+      "position": "Сотрудник сервиса",
+      "photo": "employees/lukashov-jaroslav.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Михайлова Оксана",
+      "position": "Бухгалтер",
+      "photo": "employees/mihajlova-oksana.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Прокшин Антон",
+      "position": "Руководитель сервисного отдела",
+      "photo": "employees/prokshin-anton.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Романов Роман",
+      "position": "Исполнительный директор",
+      "photo": "employees/romanov-roman.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Хирувимова Ольга",
+      "position": "Маркетолог",
+      "photo": "employees/hiruvimova-olga.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Шарабарин Александр",
+      "position": "Менеджер по развитию логистики и парка",
+      "photo": "employees/sharabarin-aleksandr.jpg",
+      "group": "teem-member"
+    },
+    {
+      "name": "Януш Марина",
+      "position": "Руководитель Развития парков",
+      "photo": "employees/janush-marina.jpg",
+      "group": "connected-drive"
+     }
   ]
 }
