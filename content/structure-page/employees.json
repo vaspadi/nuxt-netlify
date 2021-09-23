@@ -1,0 +1,12 @@
+{
+  "employeesGroups": [
+    {
+      "title": "Управляющая компания РиК",
+      "name": "teem-member"
+    },
+    {
+      "name": "connected-driver",
+      "title": "Подключение водителей"
+    }
+  ]
+}
