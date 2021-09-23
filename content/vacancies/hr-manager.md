@@ -1,6 +1,6 @@
 ---
 metaTitle: Вакансии в доходных авто. Прибыльная работа вместе с управляющей компанией РиК
-slug: hr-manager
+slug: hr-manage
 img: vacancies/img-1.jpg
 title: HR-менеджер
 description: Постоянная работа в управляющей компании РиК. Мы предлагаем
