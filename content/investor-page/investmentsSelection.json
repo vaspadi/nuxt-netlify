@@ -30,5 +30,15 @@
       "profit": 10128,
       "price": 0
     }
+  ],
+  "carClasses": [
+    {
+      "name": "Эконом, Комфорт",
+      "value": "comfort"
+    },
+    {
+      "value": "comfort-plus",
+      "name": "Комфорт +"
+    }
   ]
 }
