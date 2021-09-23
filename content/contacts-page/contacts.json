@@ -8,5 +8,22 @@
       "name": "petrozavodsk",
       "title": "Петрозаводск"
     }
+  ],
+  "contacts": [
+    {
+      "city": "kaliningrad",
+      "telephones": [
+        {
+          "telDescription": "+7 (8112) 29-60-01",
+          "tel": "+78112296001"
+        }
+      ],
+      "emails": [
+        {
+          "email": "vaspadi.pashka1@gmail.com"
+        }
+      ],
+      "addresses": "celtnieku iela"
+    }
   ]
 }
