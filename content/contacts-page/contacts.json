@@ -1,0 +1,12 @@
+{
+  "contactsCities": [
+    {
+      "title": "Калининград",
+      "name": "kaliningrad"
+    },
+    {
+      "name": "petrozavodsk",
+      "title": "Петрозаводск"
+    }
+  ]
+}
