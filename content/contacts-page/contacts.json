@@ -28,5 +28,23 @@
       "title": "Череповец",
       "name": "cherepovet"
     }
+  ],
+  "contacts": [
+    {
+      "zoom": 18,
+      "city": "syktyvkar",
+      "telephones": [
+        {
+          "telDescription": "sadfasdf",
+          "tel": "asdf"
+        }
+      ],
+      "email": "asdf",
+      "address": "asdf",
+      "coords": {
+        "x": 3,
+        "y": 2
+      }
+    }
   ]
 }
