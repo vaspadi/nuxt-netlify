@@ -251,14 +251,14 @@
     "title": "Тип инвeстиций",
     "buttons": [
       {
-        "title": "Эконом, комфортnnn",
+        "title": "Эконом, комфорт",
         "type": "comfort",
-        "img": "uploads/логотип_основная_версия_чб_1_zurashvili_branding.png"
+        "img": "/assets/img/cars/hyundai-solaris-comfort.png"
       },
       {
         "type": "comfort-plus",
         "title": "Комфорт +",
-        "img": "uploads/иконка_логотип_разработка_it_решений_zurashvili_branding.png"
+        "img": "/assets/img/cars/kia-cerato-comfort-plus.png"
       }
     ]
   }
