@@ -1,0 +1,34 @@
+{
+  "investments": [
+    {
+      "price": 1345547,
+      "profit": 40743,
+      "profitCapital": 23
+    },
+    {
+      "profitCapital": 26,
+      "profit": 21504,
+      "price": 500000
+    },
+    {
+      "profitCapital": 25,
+      "profit": 18091,
+      "price": 350002
+    },
+    {
+      "price": 280000,
+      "profit": 16499,
+      "profitCapital": 25
+    },
+    {
+      "profitCapital": 23,
+      "price": 200000,
+      "profit": 14678
+    },
+    {
+      "profitCapital": 0,
+      "profit": 10128,
+      "price": 0
+    }
+  ]
+}
