@@ -45,17 +45,20 @@
     {
       "title": "Kia Rio",
       "img": "/assets/img/cars/kia-rio-econom.png",
-      "type": "comfort"
+      "type": "comfort",
+      "alt": "asdfasdf"
     },
     {
       "title": "Hyundai Solaris",
       "img": "/assets/img/cars/hyundai-solaris-comfort.png",
-      "type": "comfort"
+      "type": "comfort",
+      "alt": "asdfasdf"
     },
     {
       "title": "Kia Cerato",
       "img": "/assets/img/cars/kia-cerato-comfort-plus.png",
-      "type": "comfort-plus"
+      "type": "comfort-plus",
+      "alt": "asdfasdf"
     }
   ]
 }
