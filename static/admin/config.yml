@@ -254,7 +254,8 @@ collections:
     folder: content/spheres
     extension: json
     create: true
-    slug: '{{fields.slug}}'
+    slug: '{{fields.meta.slug}}'
+    identifier_field: meta.title
     editor:
       preview: false
     fields:

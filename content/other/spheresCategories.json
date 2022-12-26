@@ -1,15 +1,15 @@
 {
   "categories": [
     {
-      "slug": "publicСatering",
+      "name": "publicСatering",
       "title": "Общепит"
     },
     {
-      "slug": "trade",
+      "name": "trade",
       "title": "Торговля"
     },
     {
-      "slug": "service",
+      "name": "service",
       "title": "Услуги"
     }
   ]
