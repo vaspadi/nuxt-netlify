@@ -289,6 +289,7 @@ collections:
             name: categories
             widget: relation
             collection: other
+            multiple: true
             file: spheresCategories
             value_field: categories.*.name
             search_fields: [ categories.*.name, categories.*.title ]
@@ -340,6 +341,7 @@ collections:
       - label: Преимущества
         name: benefits
         widget: list
+        summary: '{{text}}'
         field: {
           - label: Описание,
             name: text,
@@ -359,7 +361,7 @@ collections:
             widget: string
 
           - label: Второй текст
-            name: subtitle
+            name: subtext
             widget: string
 
           - label: Reverse
@@ -565,6 +567,7 @@ collections:
 
           - label: Ячейки
             name: list
+            summary: '{{fields.sphere}}'
             widget: list
             fields:
               - label: Сфера
@@ -588,7 +591,6 @@ collections:
               - label: Ширина ячейки
                 name: width
                 widget: select
-                multiple: true
                 options:
                   - { label: 25%, value: 1 }
                   - { label: 33%, value: 2 }
