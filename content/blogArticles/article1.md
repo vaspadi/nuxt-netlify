@@ -1,10 +1,14 @@
 ---
 slug: article1
 img: /assets/imgs/blog/meeting.jpg
+meta:
+  slug: nazvanie
+  title: zagolovok
+src: /assets/imgs/blog/notebook-icon.jpg
 alt: image
 title: Честный знак для кальянной
-description: RFM - анализ позволяет сегментировать клиентов по частоте, сумме покупок и выделять тех клиентов, больше денег.
-
+description: RFM - анализ позволяет сегментировать клиентов по частоте, сумме
+  покупок и выделять тех клиентов, больше денег.
 ---
 
 # HR-менеджер
