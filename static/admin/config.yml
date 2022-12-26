@@ -16,14 +16,18 @@ collections:
     editor:
       preview: false
     fields:
-      - label: Название файла
-        name: slug
-        widget: string
-        hint: 'Переименовать файл нельзя. Форматы: new-sphere, new_sphere, newSphere'
+      - label: Ключевая информация
+        name: meta
+        widget: object
+        fields:
+          - label: Название файла
+            name: slug
+            widget: string
+            hint: 'Переименовать файл нельзя. Форматы: new-sphere, new_sphere, newSphere'
 
-      - label: Заголовок
-        name: title
-        widget: string
+          - label: Заголовок
+            name: title
+            widget: string
 
       - label: Описание
         name: description
