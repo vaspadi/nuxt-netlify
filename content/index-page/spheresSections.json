@@ -2,17 +2,17 @@
   "title": "Подходит для <mark>разных</mark> сфер",
   "list": [
     {
-      "sphre": "hookahBar",
+      "sphere": "hookahBar",
       "roundedCorners": [1, 4],
       "width": 4
     },
     {
-      "sphre": "hookahShop",
+      "sphere": "hookahShop",
       "roundedCorners": [3],
       "width": 1
     },
     {
-      "sphre": "timeCafe",
+      "sphere": "timeCafe",
       "roundedCorners": [],
       "width": 1
     }
