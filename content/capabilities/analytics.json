@@ -1,0 +1,55 @@
+{
+  "slug": "analytics",
+  "title": "Аналитика",
+  "introBlock": {
+    "title": "Принимайте правильные решения",
+    "subtitle": "Определите сильные и слабые стороны своего бизнеса",
+    "ctaBtn": "Попробовать бесплатно",
+    "notice": {
+      "text": "Больше про аналитику — в нашем блоге ",
+      "ctaBtn": "Читать"
+    },
+    "img": {
+      "src": "/assets/imgs/capabilities/analytics/intro-img.png",
+      "alt": ""
+    }
+  },
+  "list": [
+    {
+      "title": "<mark>ABC</mark>-анализ",
+      "description": "Метод определения наиболее значимых активов заведения. Чтобы всегда держать в запасе источник самой большой выручки, грамотно составлять планы допродаж, актуализировать прайс, комплектовать сеты и так далее.",
+      "img": {
+        "src": "/assets/imgs/capabilities/analytics/img1.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/circle.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "<mark>RFM</mark>-анализ",
+      "description": "Анализ сегментирования клиентов по частоте, сумме покупок и давности клиента в организации. Позвольте аналитике показать вам качество клиентской базы и разделить её на четкие группы, для более детальной проработки каждого клиента.",
+      "img": {
+        "src": "/assets/imgs/capabilities/analytics/img2.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/four-leaf.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "<mark>Когортный</mark> анализ",
+      "description": "Метод выявления эффективных рекламных кампаний за счёт сбора данных о пришедшем клиенте. Система Axle покажет куда действительно стоит выделять рекламный бюджет, а какие рекламные кампании стоит отсекать.",
+      "img": {
+        "src": "/assets/imgs/capabilities/analytics/img3.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/triangle-with-circles.svg",
+        "alt": ""
+      }
+    }
+  ]
+}

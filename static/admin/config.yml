@@ -3,447 +3,1076 @@ backend:
   repo: vaspadi/nuxt-netlify
   branch: master # Branch to update (optional; defaults to master)
 
-media_folder: assets/img/uploads
+media_folder: assets/imgs/uploads
 public_folder: uploads
 
 collections:
-  - name: 'vacancies'
-    label: 'Вакансии'
-    folder: 'content/vacancies'
-    format: 'frontmatter'
-    create: true
-    slug: '{{fields.slug}}'
-    editor:
-      preview: false
-    filter:
-      field: archive
-      value: false
-    fields:
-      - { label: 'Заголовок страницы', name: 'metaTitle', widget: 'string' }
-      - { label: 'Название файла', name: 'slug', widget: 'string', hint: Переименовать файл нельзя }
-      - { label: 'Картинка', name: 'img', widget: 'image', media_folder: /assets/img/vacancies }
-      - { label: 'Заголовок вакансии', name: 'title', widget: 'string' }
-      - { label: 'Описание', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Добавить в архив', name: 'archive', widget: 'boolean', default: false, required: false }
-
-  - name: vacancies-archive
-    label: Вакансии - архив
-    folder: content/vacancies
+  - name: blogArticles
+    label: Блог
+    folder: content/blogArticles
     format: frontmatter
-    create: false
-    editor:
-      preview: false
-    filter:
-      field: archive
-      value: true
-    fields:
-      - label: Добавить в архив
-        name: archive
-        widget: boolean
-
-  - name: 'news'
-    label: 'Новости'
-    folder: 'content/news'
-    format: 'frontmatter'
     create: true
     slug: '{{fields.slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Заголовок страницы', name: 'metaTitle', widget: 'string' }
-      - { label: 'Название файла', name: 'slug', widget: 'string', hint: Переименовать файл нельзя }
-      - { label: 'Картинка', name: 'img', widget: 'image', media_folder: /assets/img/news }
-      - { label: 'Заголовок новости', name: 'title', widget: 'string' }
-      - { label: 'Описание', name: 'description', widget: 'string' }
-      - { label: 'Добавить на главную страницу', name: indexPage, widget: boolean, required: false }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: Название файла
+        name: slug
+        widget: string
+        hint: 'Переименовать файл нельзя. Форматы: new-sphere, new_sphere, newSphere'
 
-  - name: index-page
+      - label: Заголовок
+        name: title
+        widget: string
+
+      - label: Описание
+        name: description
+        widget: string
+
+      - label: Превью картинка
+        name: src
+        widget: image
+        media_folder: /assets/imgs/blog
+
+      - label: Описание картинки
+        name: alt
+        widget: string
+
+      - label: Body
+        name: body
+        widget: markdown
+
+  - name: capabilities
+    label: Возможности
+    folder: content/capabilities
+    extension: json
+    create: true
+    slug: '{{fields.slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: Название файла
+        name: slug
+        widget: string
+        hint: 'Переименовать файл нельзя. Форматы: new-sphere, new_sphere, newSphere'
+
+      - label: Заголовок
+        name: title
+        widget: string
+
+      - label: Интро блок
+        name: introBlock
+        widget: object
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Подзаголовок
+            name: subtitle
+            widget: string
+
+          - label: Текст кнопки
+            name: ctaBtn
+            widget: string
+
+          - label: Читать больше
+            name: notice
+            widget: object
+            fields:
+              - label: Текст
+                name: text
+                widget: string
+
+              - label: Текст кнопки
+                name: ctaBtn
+                widget: string
+
+          - label: Картинка
+            name: img
+            widget: object
+            fields:
+              - label: Путь к картинке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/capabilities
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+      - label: Текствовые блоки
+        name: list
+        widget: list
+        summary: '{{fields.title}}'
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Описание
+            name: description
+            widget: string
+
+          - label: Картинка
+            name: img
+            widget: object
+            fields:
+              - label: Путь к картинке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/capabilities
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+          - label: Иконка
+            name: icon
+            widget: object
+            fields:
+              - label: Путь к иконке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/capabilities
+
+              - label: Описание иконки
+                name: alt
+                widget: string
+
+  - name: apps
+    label: Приложения
+    folder: content/apps
+    extension: json
+    create: true
+    slug: '{{fields.slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: Название файла
+        name: slug
+        widget: string
+        hint: 'Переименовать файл нельзя. Форматы: new-sphere, new_sphere, newSphere'
+
+      - label: Заголовок
+        name: title
+        widget: string
+
+      - label: Интро блок
+        name: introBlock
+        widget: object
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Подзаголовок
+            name: subtitle
+            widget: string
+
+          - label: Картинка
+            name: img
+            widget: object
+            fields:
+              - label: Путь к картинке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/apps
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+      - label: Табы преимуществ
+        name: featuresTabs
+        widget: object
+        fields:
+          - label: Заголовок таба
+            name: title
+            widget: string
+
+          - label: Заголовок
+            name: text
+            widget: string
+
+          - label: Подзаголовок
+            name: subtext
+            widget: string
+
+          - label: Два телефона
+            name: twoMobiles
+            widget: boolean
+            default: false
+            required: false
+
+          - label: Заголовок под телефоном сотрудника
+            name: employeeMobileTitle
+            widget: string
+
+          - label: Заголовок под телефоном клиента
+            name: clientMobileTitle
+            widget: string
+
+          - label: Приоритет у телефона клиента
+            name: isMainClientPhone
+            widget: boolean
+            default: true
+            required: false
+
+      - label: Текстовый блок
+        name: arhitectorBlock
+        widget: object
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Текстовые блоки
+            name: list
+            widget: list
+            fields:
+              - label: Текст
+                name: text
+                widget: string
+
+
+          - label: Картинка
+            name: img
+            widget: object
+            fields:
+              - label: Путь к картинке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/index
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+  - name: spheres
+    label: Сферы
+    folder: content/spheres
+    extension: json
+    create: true
+    slug: '{{fields.slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: Ключевая информация
+        name: meta
+        widget: object
+        fields:
+          - label: Название файла
+            name: slug
+            widget: string
+            hint: 'Переименовать файл нельзя. Форматы: new-sphere, new_sphere, newSphere'
+
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Превью картинка
+            name: img
+            widget: object
+            fields:
+              - label: Путь к картинке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/spheres
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+          - label: Категории
+            name: categories
+            widget: relation
+            collection: other
+            file: spheresCategories
+            value_field: categories.*.name
+            search_fields: [ categories.*.name, categories.*.title ]
+            display_fields: [ categories.*.title ]
+
+      - label: Интро блок
+        name: introBlock
+        widget: object
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Подзаголовок
+            name: subtitle
+            widget: string
+
+          - label: Текст кнопки
+            name: ctaBtn
+            widget: string
+
+          - label: Фоновое изображение
+            name: backgroundImage
+            widget: image
+            media_folder: /assets/imgs/spheres
+
+          - label: Преимущества
+            name: features
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Заголовок
+                name: title
+                widget: string
+
+              - label: Картинка
+                name: img
+                widget: object
+                fields:
+                  - label: Путь к картинке
+                    name: src
+                    widget: image
+                    media_folder: /assets/imgs/index
+
+                  - label: Описание картинки
+                    name: alt
+                    widget: string
+
+      - label: Преимущества
+        name: benefits
+        widget: list
+        field: {
+          - label: Описание,
+            name: text,
+            widget: string
+        }
+
+      - label: Статьи
+        name: articles
+        widget: list
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Первый текст
+            name: text
+            widget: string
+
+          - label: Второй текст
+            name: subtitle
+            widget: string
+
+          - label: Reverse
+            name: reverse
+            widget: boolean
+            default: false
+            required: false
+
+          - label: Аккордеон
+            name: accordion
+            widget: list
+            fields:
+              - label: Заголовок
+                name: text
+                widget: string
+
+              - label: Подзаголовок
+                name: subtext
+                widget: string
+
+              - label: Картинка
+                name: img
+                widget: object
+                fields:
+                  - label: Путь к картинке
+                    name: src
+                    widget: image
+                    media_folder: /assets/imgs/spheres
+
+                  - label: Описание картинки
+                    name: alt
+                    widget: string
+
+  - name: indexPage
     label: 'Страница: Главная'
     files:
-      - label: Стать инвестором
-        name: becomeInvestor
-        file: content/index-page/becomeInvestor.json
+      - label: Инто секция
+        name: headerSection
+        file : content/index-page/headerSection.json
         editor:
           preview: false
         fields:
-          - label: Стать инвестором
-            name: becomeInvestor
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Текст кнопки
+            name: ctaBtn
+            widget: string
+
+          - label: Картинка
+            name: img
+            widget: object
+            fields:
+              - label: Путь к картинке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/index
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+          - label: Преимущества
+            name: features
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Заголовок
+                name: title
+                widget: string
+
+              - label: Картинка
+                name: img
+                widget: object
+                fields:
+                  - label: Путь к картинке
+                    name: src
+                    widget: image
+                    media_folder: /assets/imgs/index
+
+                  - label: Описание картинки
+                    name: alt
+                    widget: string
+
+      - label: 'О приложении: Axle Mini'
+        name: aboutAppAxleMini
+        file : content/index-page/aboutAppAxleMini.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Текст cta кнопки (mobile)
+            name: ctaMobileBtn
+            widget: string
+
+          - label: Преимущества
+            name: features
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Блок ссылка
+                name: isAboutAppBlock
+                widget: boolean
+                default: false
+                required: false
+
+              - label: Картинка
+                name: img
+                widget: object
+                required: false
+                fields:
+                  - label: Путь к картинке
+                    name: src
+                    widget: image
+                    media_folder: /assets/imgs/index
+
+                  - label: Описание картинки
+                    name: alt
+                    widget: string
+
+              - label: Заголовок
+                name: title
+                required: false
+                widget: string
+
+              - label: Описание
+                name: desciption
+                required: false
+                widget: string
+
+              - label: Фон (на телефоне)
+                name: mobileImg
+                widget: image
+                media_folder: /assets/imgs/index
+
+      - label: 'О приложении: Axle Live'
+        name: aboutAppAxleLive
+        file : content/index-page/aboutAppAxleLive.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Текст cta кнопки (mobile)
+            name: ctaMobileBtn
+            widget: string
+
+          - label: Преимущества
+            name: features
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Блок ссылка
+                name: isAboutAppBlock
+                widget: boolean
+                default: false
+                required: false
+
+              - label: Картинка
+                name: img
+                widget: object
+                required: false
+                fields:
+                  - label: Путь к картинке
+                    name: src
+                    widget: image
+                    media_folder: /assets/imgs/index
+
+                  - label: Описание картинки
+                    name: alt
+                    widget: string
+
+              - label: Заголовок
+                name: title
+                required: false
+                widget: string
+
+              - label: Описание
+                name: desciption
+                required: false
+                widget: string
+
+              - label: Фон (на телефоне)
+                name: mobileImg
+                widget: image
+                media_folder: /assets/imgs/index
+
+      - label: Сферы
+        name: spheresSections
+        file : content/index-page/spheresSections.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Ячейки
+            name: list
+            widget: list
+            fields:
+              - label: Сфера
+                name: sphere
+                widget: relation
+                collection: spheres
+                value_field: meta.slug
+                search_fields: [ meta.slug, meta.title ]
+                display_fields: [ meta.title ]
+
+              - label: Скругленные углы
+                name: roundedCorners
+                widget: select
+                multiple: true
+                options:
+                  - { label: Справа вверху, value: 1 }
+                  - { label: Справа внизу, value: 2 }
+                  - { label: Слева внизу, value: 3 }
+                  - { label: Слева вверху, value: 4 }
+
+              - label: Ширина ячейки
+                name: width
+                widget: select
+                multiple: true
+                options:
+                  - { label: 25%, value: 1 }
+                  - { label: 33%, value: 2 }
+                  - { label: 50%, value: 3 }
+                  - { label: 100%, value: 4 }
+
+
+      - label: Баннер мобильного приложения
+        name: bannerMobileApp
+        file : content/index-page/bannerMobileApp.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Подзаголовок
+            name: subtitle
+            widget: string
+
+          - label: Текст кнопки
+            name: ctaBtn
+            widget: string
+
+          - label: Картинка (desktop)
+            name: desktopImg
+            widget: object
+            fields:
+              - label: Путь к картинке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/index
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+          - label: Картинка (tablet)
+            name: tabletImg
+            widget: object
+            fields:
+              - label: Путь к картинке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/index
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+          - label: Картинка (phone)
+            name: phoneImg
+            widget: object
+            fields:
+              - label: Путь к картинке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/index
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+      - label: Возможности
+        name: capabilitiesLayout
+        file : content/index-page/capabilitiesLayout.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Строки сетки
+            name: list
+            widget: list
+            # summary: '{{fields.title}}'
+            fields:
+              - label: Элементы строки
+                name: list
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - label: Заголовок
+                    name: title
+                    widget: string
+
+                  - label: Подзаголовок
+                    name: subtitle
+                    widget: string
+
+                  - label: Ссылка
+                    name: url
+                    widget: string
+                    hint: /capabilities/control
+
+                  - label: Картинка
+                    name: img
+                    widget: object
+                    fields:
+                      - label: Путь к картинке
+                        name: src
+                        widget: image
+                        media_folder: /assets/imgs/index
+
+                      - label: Описание картинки
+                        name: alt
+                        widget: string
+
+                  - label: Картинка (mobile)
+                    name: mobileImg
+                    widget: object
+                    fields:
+                      - label: Путь к картинке
+                        name: src
+                        widget: image
+                        media_folder: /assets/imgs/index
+
+                      - label: Описание картинки
+                        name: alt
+                        widget: string
+
+  - name: blogPage
+    label: 'Страница: Блог'
+    files:
+      - label: Инто секция
+        name: introBlock
+        file : content/index-page/introBlock.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Подзаголовок
+            name: subtitle
+            widget: string
+
+          - label: Картинка
+            name: img
+            widget: object
+            fields:
+              - label: Путь к картинке
+                name: src
+                widget: image
+                media_folder: /assets/imgs/blog
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+      - label: Главный слайдер
+        name: mainSwiper
+        file : content/index-page/mainSwiper.json
+        editor:
+          preview: false
+        fields:
+          - label: Слайды
+            name: list
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Заголовок
+                name: title
+                widget: string
+
+              - label: Описание
+                name: description
+                widget: string
+
+              - label: Картинка
+                name: img
+                widget: object
+                fields:
+                  - label: Путь к картинке
+                    name: src
+                    widget: image
+                    media_folder: /assets/imgs/blog
+
+                  - label: Описание картинки
+                    name: alt
+                    widget: string
+
+      - label: Блог подписки
+        name: subscribe
+        file : content/index-page/subscribe.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Подзаголовок
+            name: sutitle
+            widget: string
+
+          - label: Input placeholder
+            name: inputPlaceholder
+            widget: string
+
+          - label: Текст кнопки (mobile)
+            name: mobileCtaBtn
+            widget: string
+
+      - label: Список статей
+        name: cardsList
+        file : content/index-page/cardsList.json
+        editor:
+          preview: false
+        fields:
+          - label: Количество статей на странице
+            name: articlesCountOnPage
+            widget: number
+            default: 12
+            value_type: "int"
+            min: 1
+
+  - name: common
+    label: Общее
+    files:
+      - label: Верхняя панель
+        name: header
+        file: content/common/header.json
+        editor:
+          preview: false
+        fields:
+          - label: Текс кнопки
+            name: ctaBtn
+            widget: string
+
+          - label: 'Блок: Нет вашей сферы?'
+            name: noSpheresCard
             widget: object
             fields:
               - label: Заголовок
                 name: title
+                widget: string
+
+              - label: Подзаголовок
+                name: subtitle
+
+      - label: Карусель партнеров
+        name: pairsSwiper
+        file: content/common/pairsSwiper.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Список картинок
+            name: list
+            widget: list
+            summary: '{{fields.img.alt}}'
+            fields:
+              - label: Картинка
+                name: img
+                widget: object
+                fields:
+                  - label: Путь к картинке
+                    name: src
+                    widget: image
+                    media_folder: /assets/imgs/common
+
+                  - label: Описание картинки
+                    name: alt
+                    widget: string
+
+      - label: Отзывы
+        name: reviewsSection
+        file : content/common/reviewsSection.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Список отзывов
+            name: list
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Картинка
+                name: img
+                widget: object
+                fields:
+                  - label: Путь к картинке
+                    name: src
+                    widget: image
+                    media_folder: /assets/imgs/common
+
+                  - label: Описание картинки
+                    name: alt
+                    widget: string
+
+              - label: Заголовок
+                name: title
+                widget: string
+
+              - label: Подзаголовок
+                name: subtitle
                 widget: string
 
               - label: Текст
                 name: text
-                widget: text
-
-              - label: Идентификатор видео с youtube
-                name: video
                 widget: string
-                hint: youtube.com/watch?v= >>>> cQDeUcGxy48 <<<<
 
-  - name: investor-page
-    label: 'Страница: Стать инвестором'
-    files:
-      - label: Выбор инвестиций
-        name: investmentsSelection
-        file: content/investor-page/investmentsSelection.json
+      - label: Форма обратной связи
+        name: tryAxle
+        file : content/common/tryAxle.json
         editor:
           preview: false
         fields:
-          - label: Типы инвестиций
-            name: investments
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Подзаголовок
+            name: subtitle
+            widget: string
+
+          - label: Нижний текст
+            name: bottomText
+            widget: string
+
+          - label: Label первого заголовка
+            name: firstInputLabel
+            widget: string
+
+          - label: Label второго заголовка
+            name: secondInputLabel
+            widget: string
+
+          - label: Текс кнопки
+            name: submitBtn
+            widget: string
+
+          - label: Предупреждение
+            name: notice
+            widget: string
+
+      - label: Полезные статьи
+        name: blogSwiper
+        file : content/common/blogSwiper.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Текст кнопки
+            name: ctaBtn
+            widget: string
+
+      - label: Вопросы и ответы
+        name: questionsBlock
+        file : content/common/questionsBlock.json
+        editor:
+          preview: false
+        fields:
+          - label: Заголовок
+            name: title
+            widget: string
+
+          - label: Вопросы и ответы
+            name: questions
             widget: list
-            minimize_collapsed: true
+            summary: '{{fields.question}}'
             fields:
-              - label: Объем инвестиций от
-                name: price
-                widget: number
-                min: 0
-                hint: рублей
+              - label: Вопрос
+                name: question
+                widget: string
 
-              - label: Доход от
-                name: profit
-                widget: number
-                min: 0
-                hint: руб/мес
+              - label: Ответ
+                name: answer
+                widget: string
 
-              - label: Доходность на вложенный капиталл
-                name: profitCapital
-                widget: number
-                min: 0
-                hint: процентов
-
-          - label: Классы машин
-            name: carClasses
+      - label: Apps marketplace icons
+        name: appDownloadIcons
+        file : content/common/appDownloadIcons.json
+        editor:
+          preview: false
+        fields:
+          - label: Иконки
+            name: icons
             widget: list
-            minimize_collapsed: true
+            fields:
+              - label: Ссылка
+                name: url
+                widget: string
+
+              - label: Путь к светлой картинке
+                name: lightSrc
+                widget: image
+                media_folder: /assets/imgs/common
+
+              - label: Путь к темной картинке
+                name: dartSrc
+                widget: image
+                media_folder: /assets/imgs/common
+
+              - label: Описание картинки
+                name: alt
+                widget: string
+
+      - label: Логотип
+        name: logo
+        file : content/common/logo.json
+        editor:
+          preview: false
+        fields:
+          - label: Путь к светлой картинке
+            name: lightSrc
+            widget: image
+            media_folder: /assets/imgs/common
+
+          - label: Путь к темной картинке
+            name: dartSrc
+            widget: image
+            media_folder: /assets/imgs/common
+
+          - label: Описание картинки
+            name: alt
+            widget: string
+
+      - label: Телефон обратной связи
+        name: recallPhone
+        file : content/common/recallPhone.json
+        editor:
+          preview: false
+        fields:
+          - label: Описание
+            name: description
+            widget: string
+
+          - label: Ссылка
+            name: tel
+            widget: string
+            hint: '+738123099347'
+
+          - label: Текст кнопки
+            name: ctaBtn
+            widget: string
+
+  - name: other
+    label: Другое
+    files:
+      - label: Названия основных страниц
+        name: links
+        file: content/other/links.json
+        editor:
+          preview: false
+        fields:
+          - label: Страницы
+            name: links
+            widget: list
+            allow_add: false
+            summary: '{{fields.title}}'
             fields:
               - label: Заголовок
                 name: name
                 widget: string
 
-              - label: slug
-                name: value
-                widget: string
-
-          - label: Машины
-            name: cars
-            widget: list
-            minimize_collapsed: true
-            fields:
-              - label: Название
-                name: title
-                widget: string
-
-              - label: Картинка
-                name: img
-                widget: image
-                media_folder: /assets/img/cars
-
-              - label: Класс машины
-                name: type
-                widget: relation
-                collection: investor-page
-                file: investmentsSelection
-                value_field: carClasses.*.value
-                search_fields: [ carClasses.*.name, carClasses.*.value ]
-                display_fields: [ carClasses.*.name ]
-
-      - label: Модели инвестиций
-        name: investmentsModels
-        file: content/investor-page/investmentsModels.json
+      - label: Категории сфер
+        name: spheresCategories
+        file: content/other/spheresCategories.json
         editor:
           preview: false
         fields:
-          - label: Табы переключения таблиц
-            name: investmentTypes
-            widget: object
-            collapsed: true
-            fields:
-              - label: Заголовок всех табов
-                name: title
-                widget: string
-
-              - label: Табы
-                name: buttons
-                widget: list
-                fields:
-                  - label: Заговок
-                    name: title
-                    widget: string
-
-                  - label: slug
-                    name: type
-                    widget: string
-
-                  - label: Картинка для таба
-                    name: img
-                    widget: image
-                    media_folder: /assets/img/cars
-
-          - label: "Таблицы"
-            name: "investmentsModels"
-            widget: "list"
-            fields:
-            - label: 'Название таблицы'
-              name: 'title'
-              widget: 'string'
-
-            - label: Кнопка таба
-              name: name
-              widget: relation
-              collection: investor-page
-              file: investmentsModels
-              value_field: investmentTypes.buttons.*.type
-              search_fields: [investmentTypes.buttons.*.title, investmentTypes.buttons.*.type]
-              display_fields: [investmentTypes.buttons.*.title]
-
-            - label: Строка
-              name: table
-              widget: list
-              minimize_collapsed: true
-              fields:
-                - label: Описание
-                  name: title
-                  widget: string
-
-                - label: Цена
-                  name: num
-                  widget: number
-
-                - label: Выделить
-                  name: selected
-                  widget: boolean
-                  required: false
-
-      - label: Истории инвесторов
-        name: investors
-        file: content/investor-page/investors.json
-        editor:
-          preview: false
-        fields:
-          - label: Истории инвесторов
-            name: investors
+          - label: Категории
+            name: categories
             widget: list
+            summary: '{{fields.title}}'
             fields:
-              - label: ФИО
+              - label: name
                 name: name
                 widget: string
+                hint: 'name должен быть на английском в таком формате: newSphere'
 
-              - label: Сумма инвистиций
-                name: investments
-                widget: number
-                hint: рублей
-
-              - label: Количество доходных машин
-                name: cars
-                widget: number
-
-              - label: Прибыль в месяц
-                name: income
-                widget: number
-                hint: рублей
-
-              - label: Идентификатор видео с youtube
-                name: video
-                widget: string
-                hint: youtube.com/watch?v= >>>> cQDeUcGxy48 <<<<
-
-      - label: Видеоряд
-        name: videoGallery
-        file: content/investor-page/videoGallery.json
-        editor:
-          preview: false
-        fields:
-          - label: Видеоряд
-            name: videos
-            widget: list
-            fields:
-              - label: Заголовок
-                name: name
-                widget: string
-                required: false
-
-              - label: Идентификатор видео с youtube
-                name: id
-                widget: string
-                hint: youtube.com/watch?v= >>>> cQDeUcGxy48 <<<<
-
-  - name: documents-page
-    label: 'Страница: Документы'
-    files:
-      - label: Документы
-        name: documents
-        file: content/documents-page/documents.json
-        editor:
-          preview: false
-        fields:
-          - label: Группы документов
-            name: documentsGroups
-            widget: list
-            minimize_collapsed: true
-            fields:
               - label: Заголовок
                 name: title
                 widget: string
-
-              - label: slug
-                name: name
-                widget: string
-
-          - label: Документы
-            name: documents
-            widget: list
-            fields:
-              - label: Заголовок на сайте
-                name: name
-                widget: string
-
-              - label: Картинка
-                name: img
-                widget: image
-                media_folder: /assets/img/documents
-
-              - label: Документ
-                name: path
-                widget: file
-                media_folder: /static/documents
-
-              - label: Группы
-                name: investors
-                widget: relation
-                multiple: true
-                collection: documents-page
-                file: documents
-                value_field: documentsGroups.*.name
-                search_fields: [ documentsGroups.*.title, documentsGroups.*.name ]
-                display_fields: [ documentsGroups.*.title ]
-
-  - name: structure-page
-    label: 'Страница: Структура'
-    files:
-      - label: Сотрудники
-        name: employees
-        file: content/structure-page/employees.json
-        editor:
-          preview: false
-        fields:
-          - label: Группы сотрудников
-            name: employeesGroups
-            widget: list
-            minimize_collapsed: true
-            fields:
-              - label: Название группы
-                name: title
-                widget: string
-
-              - label: slug
-                name: name
-                widget: string
-
-          - label: Сотрудники
-            name: employees
-            widget: list
-            fields:
-              - label: Имя
-                name: name
-                widget: string
-
-              - label: Должность
-                name: position
-                widget: string
-
-              - label: Фотография
-                name: photo
-                widget: image
-                media_folder: /assets/img/employees
-
-              - label: Группа
-                name: group
-                widget: relation
-                collection: structure-page
-                file: employees
-                value_field: employeesGroups.*.name
-                search_fields: [ employeesGroups.*.title, employeesGroups.*.name ]
-                display_fields: [ employeesGroups.*.title ]
-
-  - name: contacts-page
-    label: 'Страница: Контакты'
-    files:
-      - label: Контакты
-        name: contacts
-        file: content/contacts-page/contacts.json
-        editor:
-          preview: false
-        fields:
-          - label: Города
-            name: contactsCities
-            widget: list
-            minimize_collapsed: true
-            fields:
-              - label: Название города
-                name: title
-                widget: string
-
-              - label: slug
-                name: name
-                widget: string
-
-          - label: Контакты
-            name: contacts
-            widget: list
-            fields:
-              - label: Город
-                name: city
-                widget: relation
-                collection: contacts-page
-                file: contacts
-                value_field: contactsCities.*.name
-                search_fields: [ contactsCities.*.title, contactsCities.*.name ]
-                display_fields: [ contactsCities.*.title ]
-
-              - label: Телефон
-                name: telephones
-                widget: list
-                fields:
-                  - label: Описание
-                    name: telDescription
-                    widget: string
-                    hint: '+7 (8112) 29-60-01'
-
-                  - label: Ссылка
-                    name: tel
-                    widget: string
-                    hint: '+78112296001'
-
-              - label: Почта
-                name: email
-                widget: string
-
-              - label: Адрес
-                name: address
-                fields:
-                  - label: Адрес
-                    name: address
-                    widget: string
-
-              - label: zoom карты
-                name: zoom
-                widget: number
-                default: 18
-
-              - label: Координаты
-                name: coords
-                widget: object
-                fields:
-                  - label: X координата на карте
-                    name: x
-                    widget: number
-
-                  - label: Y координата на карте
-                    name: y
-                    widget: number

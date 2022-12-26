@@ -1,0 +1,55 @@
+{
+  "slug": "control",
+  "title": "Управление",
+  "introBlock": {
+    "title": "Держите руку <mark>на пульсе</mark>",
+    "subtitle": "Контролируйте свой бизнес и сотрудников из любой точки мира",
+    "ctaBtn": "Попробовать бесплатно",
+    "notice": {
+      "text": "Больше про управление — в нашем блоге.",
+      "ctaBtn": "Читать"
+    },
+    "img": {
+      "src": "/assets/imgs/capabilities/control/intro-bg.png",
+      "alt": ""
+    }
+  },
+  "list": [
+    {
+      "title": "<mark>Сохранение активов</mark> бизнеса",
+      "description": "Минимизация краж и потери активов засчёт контроля опасных операций, и крайне детальных прав на разделы и функции системы.",
+      "img": {
+        "src": "/assets/imgs/capabilities/control/img1.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/three-circles.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Автоматический <mark>расчёт ЗП</mark>",
+      "description": "Система сама рассчитает зарплату вашим сотрудникам, вознаградит их за продажу конкретных позиций и зафиксирует премию за выполнение плана.",
+      "img": {
+        "src": "/assets/imgs/capabilities/control/img2.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/square.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Контроль из <mark>любой точки мира</mark>",
+      "description": "Следите за решающими показателями в реальном времени, с любого устройства, и управляйте своим бизнесом эффективно. А остальное оставьте системе Axle.",
+      "img": {
+        "src": "/assets/imgs/capabilities/control/img3.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/triangle.svg",
+        "alt": ""
+      }
+    }
+  ]
+}

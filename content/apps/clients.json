@@ -1,0 +1,69 @@
+{
+  "slug": "clients",
+  "title": "Приложение для клиентов",
+  "introBlock": {
+    "title": "Делает жизнь ваших клиентов <mark>проще</mark>",
+    "subtitle": "Повышайте лояльность клиентов благодаря удобным инструментам",
+    "img": {
+      "src": "/assets/imgs/apps/phones.png",
+      "alt": ""
+    }
+  },
+  "featuresTabs": [
+    {
+      "title": "Онлайн бронирование",
+      "text": "Бронируй",
+      "subtext": "Бронирование стола или услуг в пару нажатий",
+      "twoMobiles": true,
+      "clientMobileTitle": "Клиент",
+      "employeeMobileTitle": "Сотрудник",
+      "isMainClientPhone": true
+    },
+    {
+      "title": "Push - уведомления",
+      "text": "Оповещай",
+      "subtext": "Уведомление о самом важном от любимых организаций",
+      "twoMobiles": false,
+      "clientMobileTitle": "Клиент",
+      "employeeMobileTitle": "Сотрудник",
+      "isMainClientPhone": true
+    },
+    {
+      "title": "Электронное меню",
+      "text": "Заказывай",
+      "subtext": "Всегда актуальный прайс в легкой доступности",
+      "twoMobiles": true,
+      "clientMobileTitle": "Клиент",
+      "employeeMobileTitle": "Сотрудник",
+      "isMainClientPhone": true
+    },
+    {
+      "title": "Детализация чека",
+      "text": "Просматривай",
+      "subtext": "Прозрачность в расчетах и уникальная функция",
+      "twoMobiles": false,
+      "clientMobileTitle": "Клиент",
+      "employeeMobileTitle": "Сотрудник",
+      "isMainClientPhone": true
+    }
+  ],
+  "arhitectorBlock": {
+    "title": "Конструктор <mark>программ лояльности</mark>",
+    "list": [
+      {
+        "text": "По статистике, повторные приходы лояльных клиентов — это более 60% оборота бизнеса. Удерживайте ваших клиентов с помощью программ лояльности.",
+        "img": {
+          "src": "/assets/imgs/apps/clients-img1.jpg",
+          "alt": ""
+        }
+      },
+      {
+        "text": "Постройте выгодные условия и ваши клиенты принесут вам большую выручку!",
+        "img": {
+          "src": "/assets/imgs/apps/clients-img2.jpg",
+          "alt": ""
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "employees",
+  "title": "Приложение для сотрудников",
+  "introBlock": {
+    "title": "Управляйте бизнесом <mark>со смартфона или планшета</mark>",
+    "subtitle": "Большинство функций системы у вас кармане",
+    "img": {
+      "src": "/assets/imgs/iPad4.png",
+      "alt": ""
+    }
+  },
+  "featuresTabs": [
+    {
+      "title": "Онлайн касса",
+      "text": "Продавай",
+      "subtext": "Пару свайпов от заказа и до расчёта",
+      "twoMobiles": false,
+      "clientMobileTitle": "Клиент",
+      "employeeMobileTitle": "Сотрудник",
+      "isMainClientPhone": true
+    },
+    {
+      "title": "Управление складом",
+      "text": "Контролируй",
+      "subtext": "Работайте со складскими остатками в реальном времени",
+      "twoMobiles": false,
+      "clientMobileTitle": "Клиент",
+      "employeeMobileTitle": "Сотрудник",
+      "isMainClientPhone": true
+    },
+    {
+      "title": "Финансовый учёт",
+      "text": "Считай",
+      "subtext": "Всегда Учитывайте расходы и доходы с мобильного устройства прайс в легкой доступности",
+      "twoMobiles": false,
+      "clientMobileTitle": "Клиент",
+      "employeeMobileTitle": "Сотрудник",
+      "isMainClientPhone": true
+    },
+    {
+      "title": "Управление бизнесом",
+      "text": "Управляй",
+      "subtext": "Весь перечень функций для мобильного управления",
+      "twoMobiles": false,
+      "clientMobileTitle": "Клиент",
+      "employeeMobileTitle": "Сотрудник",
+      "isMainClientPhone": true
+    }
+  ],
+  "arhitectorBlock": {
+    "title": "Для <mark>сотрудников</mark>",
+    "list": [
+      {
+        "text": "Работа с клиентами у столов или за стойкой, идентификация клиентов, расчет и печать чеков, проведение инвентаризаций и поставок",
+        "img": {
+          "src": "/assets/imgs/apps/employees-img1.jpg",
+          "alt": ""
+        }
+      },
+      {
+        "text": "Сокращение времени работы с клиентом в 2 раза, для сфер обслуживания",
+        "img": {
+          "src": "/assets/imgs/apps/employees-img2.jpg",
+          "alt": ""
+        }
+      }
+    ]
+  }
+}

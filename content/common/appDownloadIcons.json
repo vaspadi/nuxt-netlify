@@ -1,0 +1,22 @@
+{
+  "icons": [
+    {
+      "url": "https://www.apple.com/ru/app-store/",
+      "lightSrc": "/assets/imgs/svg/social/app-store.svg",
+      "darkSrc": "/assets/imgs/apps/AppStore.svg",
+      "alt": "App Store"
+    },
+    {
+      "url": "https://play.google.com/store/apps?hl=ru&gl=US&pli=1",
+      "lightSrc": "/assets/imgs/svg/social/google-play.svg",
+      "darkSrc": "/assets/imgs/apps/EbanyHuavei.svg",
+      "alt": "Google Play"
+    },
+    {
+      "url": "https://appgallery.huawei.com/",
+      "lightSrc": "/assets/imgs/svg/social/app-gallery.svg",
+      "darkSrc": "/assets/imgs/apps/GooglePlay.svg",
+      "alt": "AppGallery"
+    }
+  ]
+}

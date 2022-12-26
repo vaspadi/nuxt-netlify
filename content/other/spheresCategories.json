@@ -1,0 +1,16 @@
+{
+  "categories": [
+    {
+      "slug": "publicСatering",
+      "title": "Общепит"
+    },
+    {
+      "slug": "trade",
+      "title": "Торговля"
+    },
+    {
+      "slug": "service",
+      "title": "Услуги"
+    }
+  ]
+}

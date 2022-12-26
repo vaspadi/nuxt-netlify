@@ -1,0 +1,10 @@
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to  {
+    opacity: 0;
+  }
+
+  .open-acc-enter-active, .open-acc-active {
+    transition: opacity .1s;
+  }

@@ -1,0 +1,55 @@
+{
+  "slug": "marketing",
+  "title": "Маркетинг",
+  "introBlock": {
+    "title": "Двигатель <mark>клиентской</mark> активности",
+    "subtitle": "Используйте инструменты для привлечения и удержания клиентов",
+    "ctaBtn": "Попробовать бесплатно",
+    "notice": {
+      "text": "Больше про маркетинг — в нашем блоге",
+      "ctaBtn": "Читать"
+    },
+    "img": {
+      "src": "/assets/imgs/capabilities/marketing/intro-img.png",
+      "alt": ""
+    }
+  },
+  "list": [
+    {
+      "title": "Конструктор <mark>программ лояльности</mark>",
+      "description": "По статистике, повторные приходы лояльных клиентов — это более 60% оборота бизнеса. Удерживайте ваших клиентов с помощью программ лояльности. Постройте выгодные условия и ваши клиенты принесут вам больше выручки!",
+      "img": {
+        "src": "/assets/imgs/capabilities/marketing/img1.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/narrow-three-circles.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Онлайн-<mark>бронирование</mark>",
+      "description": "Внешнее онлайн бронирование для размещения в социальных сетях и картографических сервисах, вся информация поступает напрямую в систему сотруднику и сопровождается уведомлением.",
+      "img": {
+        "src": "/assets/imgs/capabilities/marketing/img2.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/square-with-two-circles.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Клиентское <mark>приложение</mark>",
+      "description": "Приложение для клиентов тесно связано с системой Axle, детализации чеков, вызов сотрудника к столу, онлайн бронирование и диалог с организацией и многое другое.",
+      "img": {
+        "src": "/assets/imgs/capabilities/marketing/img3.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/triangle-with-circles.svg",
+        "alt": ""
+      }
+    }
+  ]
+}

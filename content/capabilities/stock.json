@@ -1,0 +1,55 @@
+{
+  "slug": "stock",
+  "title": "Склад",
+  "introBlock": {
+    "title": "<mark>Порядок</mark> без усилий",
+    "subtitle": "Упростите работу со складским учётом",
+    "ctaBtn": "Попробовать бесплатно",
+    "notice": {
+      "text": "Больше про склад — в нашем блоге",
+      "ctaBtn": "Читать"
+    },
+    "img": {
+      "src": "/assets/imgs/capabilities/stock/intro-img.png",
+      "alt": ""
+    }
+  },
+  "list": [
+    {
+      "title": "Автоматическое <mark>списание</mark>",
+      "description": "Система автоматически спишет ингредиенты или товар, при продаже позиции вашего прайса, с учетом возможных потерь.  А если что-то испортилось, ответственное лицо сможет провести ручное списание.",
+      "img": {
+        "src": "/assets/imgs/capabilities/stock/img1.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/square.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Инвентаризация",
+      "description": "Сохраните свои активы засчёт частых инвентаризаций по ответственным, система покажет вам количественное и суммарное расхождение по активам",
+      "img": {
+        "src": "/assets/imgs/capabilities/stock/img2.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/narrow-three-circles.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Складские <mark>остатки</mark>",
+      "description": "Отслеживайте фактический остаток товара на складе с мобильного телефона. Вносите поставки, создавайте ингредиенты и связывайте их с вашим прайсом",
+      "img": {
+        "src": "/assets/imgs/capabilities/stock/img3.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/circle.svg",
+        "alt": ""
+      }
+    }
+  ]
+}

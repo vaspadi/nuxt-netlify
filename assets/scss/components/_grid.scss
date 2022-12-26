@@ -1,0 +1,38 @@
+// [BlockSize.smallest]: '.grid__item--smallest',
+// [BlockSize.small]: '.grid__item--small',
+// [BlockSize.middle]: '.grid__item--middle',
+// [BlockSize.big]: '.grid__item--big',
+// [BlockSize.veryBig]: '.grid__item--veryBig',
+// [BlockSize.biggest]: '.grid__item--biggest',
+$grid-gap: 20px;
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    &--smallest {
+      width: calc((100% - $grid-gap * 3) / 4);
+    }
+
+    &--small {
+      width: calc((100% - $grid-gap * 1) / 3);
+    }
+
+    &--middle {
+      width: calc((100% - $grid-gap) / 2);
+    }
+
+    &--big {
+      width: calc(66% - $grid-gap / 2);
+    }
+
+    &--veryBig {
+      width: calc(75% - $grid-gap / 2);
+    }
+
+    &--biggest {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Простая <mark>автоматизация</mark><br> сложных <mark>бизнес-процессов</mark>",
+  "ctaBtn": "Попробовать бесплатно",
+  "img": {
+    "src": "/assets/imgs/index.png",
+    "alt": ""
+  },
+  "features": [
+    {
+      "title": "Приложение для сотрудников и руководителей",
+      "img": {
+        "src": "/assets/imgs/cyrkle_lines_line.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Представлены в 85 регионах России",
+      "img": {
+        "src": "/assets/imgs/cyrkle_lines_grid.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Цена от 1 120 р/мес за всю систему",
+      "img": {
+        "src": "/assets/imgs/cyrkle_lines_cyrkle.svg",
+        "alt": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "slug": "hookahShop",
+    "title": "Кальянный магазин",
+    "categories": ["trade"]
+  },
+  "introBlock": {
+    "title": "Автоматизация кальянного магазина",
+    "subtitle": "Система для кальянного магазина от 1 120 ₽ в месяц",
+    "ctaBtn": "Попробовать бесплатно",
+    "backgroundImage": "/assets/imgs/spheres/hookahShop/intro-bg.jpg",
+    "features": [
+      {
+        "title": "85 регионов присутствия в России",
+        "img": {
+          "src": "/assets/imgs/cyrkle_lines_line.svg",
+          "alt": ""
+        }
+      },
+      {
+        "title": "3000 кальянных организаций",
+        "img": {
+          "src": "/assets/imgs/cyrkle_lines_grid.svg",
+          "alt": ""
+        }
+      },
+      {
+        "title": "5 лет на кальянном рынке",
+        "img": {
+          "src": "/assets/imgs/cyrkle_lines_cyrkle.svg",
+          "alt": ""
+        }
+      }
+    ]
+  },
+  "benefits": [
+    "Работа с <mark>маркированным</mark> товаром",
+    "<mark>Приложение</mark> для сотрудников и руководителей",
+    "<mark>Учёт склада</mark> до каждой пачки",
+    "Интеграции <mark>с онлайн кассами</mark>",
+    "Бонусные <mark>программы лояльности</mark>",
+    "<mark>Аналитические</mark> инструменты продаж"
+  ],
+  "articles": [
+    {
+      "title": "POS - Терминал",
+      "text": "Простой, надёжный, удобный и функциональный. Контроль сомнительных операций, работа с несколькими чеками, автоматические скидки для гостей",
+      "subtext": "Ничего покупать не нужно, подойдет для любого устройства: телефон, планшет, компьютер или моноблок",
+      "reverse": true,
+      "accordion": [
+        {
+          "text": "Онлайн бронирование",
+          "subtext": "Онлайн брони от гостей, прямо в терминале",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img1.png",
+            "alt": ""
+          }
+        },
+        {
+          "text": "Модификаторы",
+          "subtext": "Онлайн брони от гостей, прямо в терминале",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img1.png",
+            "alt": ""
+          }
+        },
+        {
+          "text": "Печать заявок",
+          "subtext": "some text",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img1.png",
+            "alt": ""
+          }
+        },
+        {
+          "text": "Свои счета",
+          "subtext": "Онлайн брони от гостей, прямо в терминале",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img1.png",
+            "alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "title": "Программы лояльности",
+      "text": "CRM система поможет привлечь новых гостей и удержать старых, с помощью бонусных и скидочных программ лояльности",
+      "subtext": "Аналитические инструменты помогут создать идеальное меню, выявить эффективные рекламные кампании и сегментировать базу гостей",
+      "reverse": false,
+      "accordion": [
+        {
+          "text": "Аналитика",
+          "subtext": "Аналитические инструменты ABC, RFM, Когорты",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img2.png",
+            "alt": ""
+          }
+        },
+        {
+          "text": "Программы лояльности",
+          "subtext": "Онлайн брони от гостей, прямо в терминале",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img1.png",
+            "alt": ""
+          }
+        },
+        {
+          "text": "Акции",
+          "subtext": "some text",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img1.png",
+            "alt": ""
+          }
+        },
+        {
+          "text": "База гостей",
+          "subtext": "Онлайн брони от гостей, прямо в терминале",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img1.png",
+            "alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "title": "Управленческий учет",
+      "text": "Понятная бухгалтерия без профессионального жаргонизма, детальные отчеты и статистика, контроль за финансами и складскими остатками в реальном времени",
+      "subtext": "И это далеко не полный список возможностей Axle. Облачный Бэк-офис позволяет работать удаленно и с любого устройства",
+      "reverse": true,
+      "accordion": [
+        {
+          "text": "Автоматический расчёт ЗП",
+          "subtext": "Конструктор расчета зарплаты для должностей",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img3.png",
+            "alt": ""
+          }
+        },
+        {
+          "text": "Технологические карты",
+          "subtext": "Онлайн брони от гостей, прямо в терминале",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img1.png",
+            "alt": ""
+          }
+        },
+        {
+          "text": "Складской учёт",
+          "subtext": "some text",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img1.png",
+            "alt": ""
+          }
+        },
+        {
+          "text": "Отчётность",
+          "subtext": "Онлайн брони от гостей, прямо в терминале",
+          "img": {
+            "src": "/assets/imgs/spheres/hookahBar/img1.png",
+            "alt": ""
+          }
+        }
+      ]
+    }
+  ]
+}

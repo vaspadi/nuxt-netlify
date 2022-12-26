@@ -1,0 +1,55 @@
+{
+  "slug": "finance",
+  "title": "Финансы",
+  "introBlock": {
+    "title": "<mark>Управляйте</mark> денежными потоками",
+    "subtitle": "Уделите внимание финансовому аспекту бизнеса",
+    "ctaBtn": "Попробовать бесплатно",
+    "notice": {
+      "text": "Больше про финансы — в нашем блоге",
+      "ctaBtn": "Читать"
+    },
+    "img": {
+      "src": "/assets/imgs/capabilities/finance/intro-img.png",
+      "alt": ""
+    }
+  },
+  "list": [
+    {
+      "title": "<mark>Отчёт о движении</mark> денежных средств",
+      "description": "Отчет о фактических поступлениях и выплатах в организации. ОДДС покажет что оттягивает деньги из бизнеса, предскажет кассовый разрыв и поможет не запутаться в платежах.",
+      "img": {
+        "src": "/assets/imgs/capabilities/finance/img1.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/narrow-three-circles.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Смены",
+      "description": "Детализация по финансовым движения за смену, поступление денежных средств на счета. Продажи за смену, список всех посетивших клиентов, история начисления и списания депозитов.",
+      "img": {
+        "src": "/assets/imgs/capabilities/finance/img2.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/vertical-three-circles.svg",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Бюджет",
+      "description": "Инкассация, ведение статей расходов и доходов. Проводите бюджетирование ваших денежных средств, фиксируйте все операции. Тем самым вы сможете разумно и точно управлять деньгами.",
+      "img": {
+        "src": "/assets/imgs/capabilities/finance/img3.png",
+        "alt": ""
+      },
+      "icon": {
+        "src": "/assets/imgs/capabilities/icons/star-in-circle.svg",
+        "alt": ""
+      }
+    }
+  ]
+}

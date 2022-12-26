@@ -1,0 +1,17 @@
+{
+  "title": "Axle mini - приложение для сотрудников",
+  "subtitle": "Мобильное приложение оборудовано всеми функциями системы учета для комфортной работы с клиентами, складскими остатками и управления бизнесом",
+  "ctaBtn": "Подробнее",
+  "desktopImg": {
+    "src": "/assets/imgs/desktopandmobile.png",
+    "alt": ""
+  },
+  "tabletImg": {
+    "src": "/assets/imgs/axle-mini-tablet.png",
+    "alt": ""
+  },
+  "phoneImg": {
+    "src": "/assets/imgs/axle-mini-mobile.png",
+    "alt": ""
+  }
+}

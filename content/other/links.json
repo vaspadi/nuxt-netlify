@@ -1,0 +1,27 @@
+{
+  "links": [
+    {
+      "name": "Возможности",
+      "routeName": "capabilities-slug",
+      "childrenFolder": "capabilities"
+    },
+    {
+      "name": "Приложения",
+      "routeName": "apps-slug",
+      "childrenFolder": "apps"
+    },
+    {
+      "name": "Сферы",
+      "routeName": "fields-slug",
+      "childrenFolder": "spheres"
+    },
+    {
+      "name": "Цены",
+      "url": "/prices"
+    },
+    {
+      "name": "Блог",
+      "url": "/blog"
+    }
+  ]
+}

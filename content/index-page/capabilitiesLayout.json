@@ -1,0 +1,75 @@
+{
+  "title": "Возможности",
+  "rows": [
+    [
+      {
+        "title": "Управление",
+        "subtitle": "Контролируйте свой бизнес и сотрудников из любой точки мира",
+        "img": {
+          "src": "capabilities/mackbook.png",
+          "alt": ""
+        },
+        "mobileImg": {
+          "src": "capabilities/mobile/mackbook.png",
+          "alt": ""
+        },
+        "url": "/capabilities/control"
+      },
+      {
+        "title": "Маркетинг",
+        "subtitle": "Используйте встроенные инструменты для привлечения и удержания клиентов",
+        "img": {
+          "src": "capabilities/rocket.png",
+          "alt": ""
+        },
+        "mobileImg": {
+          "src": "capabilities/mobile/rocket.png",
+          "alt": ""
+        },
+        "url": "/capabilities/marketing"
+      }
+    ],
+    [
+      {
+        "title": "Аналитика",
+        "subtitle": "Определите сильные и слабые стороны своего бизнеса",
+        "img": {
+          "src": "capabilities/analytics.png",
+          "alt": ""
+        },
+        "mobileImg": {
+          "src": "capabilities/mobile/analytics.png",
+          "alt": ""
+        },
+        "url": "/capabilities/analytics",
+        "isExtendedBeyondBorders": true
+      },
+      {
+        "title": "Финансы",
+        "subtitle": "Следите за денежными потоками",
+        "img": {
+          "src": "capabilities/finance.png",
+          "alt": ""
+        },
+        "mobileImg": {
+          "src": "capabilities/mobile/finance.png",
+          "alt": ""
+        },
+        "url": "/capabilities/finance"
+      },
+      {
+        "title": "Склад",
+        "subtitle": "Будьте в курсе наличия и доступности товаров",
+        "img": {
+          "src": "capabilities/stock.png",
+          "alt": ""
+        },
+        "mobileImg": {
+          "src": "capabilities/mobile/stock.png",
+          "alt": ""
+        },
+        "url": "/capabilities/stock"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "В <mark>Axle</mark> работают",
+  "list": [
+    {
+      "src": "/assets/imgs/marquee/mol.svg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/imgs/marquee/hookaplace.png",
+      "alt": ""
+    },
+    {
+      "src": "/assets/imgs/marquee/nuafroup.svg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/imgs/marquee/spa.png",
+      "alt": ""
+    },
+    {
+      "src": "/assets/imgs/marquee/kafe.png",
+      "alt": ""
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Подходит для <mark>разных</mark> сфер",
+  "list": [
+    {
+      "title": "Кальянная",
+      "url": "hookah_bar",
+      "roundedCorners": [1, 4],
+      "width": 4,
+      "img": {
+        "src": "/assets/imgs/cool-baraber.png",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Кальянный магазин",
+      "url": "hookah_shop",
+      "roundedCorners": [3],
+      "width": 1,
+      "img": {
+        "src": "/assets/imgs/cool-baraber.png",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Кафе",
+      "url": "coffe",
+      "roundedCorners": [],
+      "width": 1,
+      "img": {
+        "src": "/assets/imgs/cool-baraber.png",
+        "alt": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+ {
+  "title": "Axle live — приложение для <mark>ваших клиентов</mark>",
+  "ctaMobileBtn": "Подробнее о приложении",
+  "features": [
+    {
+      "title": "Подробнее<br> о приложении",
+      "isAboutAppBlock": true
+    },
+    {
+      "title": "<span class=\"ws-nowrap\">Онлайн-бронирование</span>",
+      "description": "Бронирование стола или услуги без необходимости звонить в заведение, с предзаказом или без него",
+      "mobileImg": "/assets/imgs/bg-index.png"
+    },
+    {
+      "img": {
+        "src": "/assets/imgs/bg-index.png",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Push - уведомления",
+      "description": "Оповещайте своих клиентов о выгодных предложениях и инфоповодах, бронировании и бонусной системе лояльности (дорабатывается)",
+      "mobileImg": "/assets/imgs/bg-index.png"
+    },
+    {
+      "img": {
+        "src": "/assets/imgs/bg-index.png",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Программа лояльности",
+      "description": "Актуальный бонусный баланс, скидочные программы и прозрачность уровней начисления",
+      "mobileImg": "/assets/imgs/bg-index.png"
+    },
+    {
+      "img": {
+        "src": "/assets/imgs/bg-index.png",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Электронное меню и чеки",
+      "description": "Всегда актуальное электронное меню, заказ клиента в режиме реального времени и история чеков",
+      "mobileImg": "/assets/imgs/bg-index.png"
+    },
+    {
+      "img": {
+        "src": "/assets/imgs/bg-index.png",
+        "alt": ""
+      }
+    }
+  ]
+}

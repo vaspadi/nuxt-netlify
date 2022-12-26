@@ -1,0 +1,123 @@
+@import 'base/_containers';
+@import 'base/_fonts';
+@import 'base/_variables';
+@import 'base/_common';
+@import 'base/_animations';
+@import 'base/_mixins';
+
+// components
+@import 'components/section';
+@import 'components/grid';
+@import 'components/pagination';
+@import 'components/input';
+
+// abstracts
+@import 'abstracts/scroll';
+@import 'abstracts/display-none';
+@import 'abstracts/typography';
+@import 'abstracts/object-fit';
+
+.gap10{
+    gap: 10px;
+}
+.swiper-pagination{
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+    &-bullet{
+        width: 9px;
+        cursor: pointer;
+        height: 9px;
+        border: 1.5px solid white;
+        display: inline-block;
+        border-radius: 50%;
+            &:hover{
+            background: #C5D4E2;
+            }
+            &-active{
+            background: #C5D4E2;
+            border: 1px solid #FFFFFF;
+    }
+  }
+  }
+.axle-bacground-img{
+    background: url('~@/assets/imgs/snowflaces.svg');
+    background-size: cover;
+}
+.axle-bacground-solo-img{
+    background: url('~@/assets/imgs/snowflace-big.svg');
+    background-size: cover;
+}
+.bg-no-repeat{
+    background-repeat: no-repeat;
+}
+.bg-pos{
+background-position: bottom right;
+background-size: contain;
+@media (max-width: 767px){
+  background-position: top center;
+  }
+}
+.bg-pos-center{
+    background-position: center center;
+    background-size: contain;
+}
+.inp-bc{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    margin-bottom: 30px;
+    font-size: 16px;
+
+    input {
+      width: 100%;
+      height: 40px;
+      border: none;
+      border-bottom: 1px solid $main-gray-dark;
+      outline: none;
+      transition: 0.3s;
+      background-color: transparent;
+
+      // &::placeholder {
+      //   opacity: 0;
+      // }
+
+      // &:focus {
+      //   &::placeholder {
+      //     opacity: 1;
+      //   }
+
+      //   ~ label {
+      //     color: $main-gray-dark;
+      //     font-size: 0.8em;
+      //   }
+      // }
+
+      // &:focus ~ label,
+      // &:valid ~ label {
+      //   transform: translateY(-1.6em);
+      // }
+    }
+
+    label{
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        pointer-events: none;
+        transition: 0.3s;
+        color: $main-gray-dark;
+    }
+}
+
+.workInAxle{
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 150%;
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+.relative{
+    position: relative;
+}

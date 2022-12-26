@@ -1,0 +1,17 @@
+{
+  "title": "Axle live",
+  "subtitle": "Клиентское приложение для привлечения и удержания гостей, попробуйте сами - это удобно! Полностью интегрированно в экосистему Axle, а значит все изменения будут актуализироваться разом.",
+  "ctaBtn": "Подробнее",
+  "desktopImg": {
+    "src": "/assets/imgs/two-phones.png",
+    "alt": ""
+  },
+  "tabletImg": {
+    "src": "/assets/imgs/phones-for-tablet.png",
+    "alt": ""
+  },
+  "phoneImg": {
+    "src": "/assets/imgs/phones-for-phone.png",
+    "alt": ""
+  }
+}

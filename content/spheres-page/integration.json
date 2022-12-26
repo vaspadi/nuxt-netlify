@@ -1,0 +1,37 @@
+{
+  "title": "Интеграции",
+  "examples": [
+    {
+      "img": {
+        "src": "/assets/imgs/intagration/int1.svg",
+        "alt": ""
+      },
+      "title": "Соответствие ФЗ-54"
+    },
+    {
+      "img": {
+        "src": "/assets/imgs/intagration/int2.svg",
+        "alt": ""
+      },
+      "title": "Интеграция с 1С"
+    },
+    {
+      "img": {
+        "src": "/assets/imgs/intagration/int3.svg",
+        "alt": ""
+      },
+      "title": "Работа с маркировкой"
+    },
+    {
+      "img": {
+        "src": "/assets/imgs/intagration/int4.svg",
+        "alt": ""
+      },
+      "title": "Поддержка онлайн-касс"
+    }
+  ],
+  "banner": {
+    "title": "Доверьте ваш бизнес Axle бесплатно на 7 дней",
+    "ctaBtn": "Попробовать <span class=\"dn-540\"> систему </span> бесплатно"
+  }
+}

@@ -1,0 +1,98 @@
+// Геренерация цветов из colors map
+@mixin modifiers($map, $attribute, $prefix: '-', $separator: '-', $base: 'base') {
+    @each $key, $value in $map {
+      &#{if($key != $base, #{$prefix}#{$key}, '')} {
+        @if type-of($value) == 'map' {
+          @include modifiers($value, $attribute, $separator);
+        }
+        @else {
+          #{$attribute}: $value;
+        }
+      }
+    }
+  }
+.bg {
+    @include modifiers($colors, 'background', $separator: ':');
+  }
+.color {
+    @include modifiers($colors, 'color', $separator: ':');
+}
+// Геренерация отступов из spacing map
+@mixin modifiers($map, $attribute, $prefix: '-', $separator: '-', $base: 'base', $remove: null) {
+	@each $key, $value in $map {
+		@if($remove){
+			$key: str-replace($key, $remove, '');
+		}
+		&#{if($key != $base, #{$prefix}#{$key}, '')} {
+			@if type-of($value) == 'map' {
+				@include modifiers($value, $attribute, $prefix, $separator, $base, $remove);
+			}
+			@else if type-of($attribute) == 'list' {
+				@each $a in $attribute {
+					#{$a}: $value;
+				}
+			}
+			@else {
+				#{$attribute}: $value;
+			}
+		}
+	}
+}
+// Padding
+.pt {
+	@include modifiers(
+		$map: $spacing-map,
+		$attribute: ('padding-top'),
+		$prefix: '-'
+	);
+}
+.pb {
+	@include modifiers(
+		$map: $spacing-map,
+		$attribute: ('padding-bottom'),
+		$prefix: '-'
+	);
+}
+.pl {
+	@include modifiers(
+		$map: $spacing-map,
+		$attribute: ('padding-left'),
+		$prefix: '-'
+	);
+}
+.pr {
+	@include modifiers(
+		$map: $spacing-map,
+		$attribute: ('padding-right'),
+		$prefix: '-'
+	);
+}
+// margin
+.mt {
+	@include modifiers(
+		$map: $spacing-map,
+		$attribute: ('margin-top'),
+		$prefix: '-'
+	);
+}
+.mb {
+	@include modifiers(
+		$map: $spacing-map,
+		$attribute: ('margin-bottom'),
+		$prefix: '-'
+	);
+}
+.ml {
+	@include modifiers(
+		$map: $spacing-map,
+		$attribute: ('margin-left'),
+		$prefix: '-'
+	);
+}
+.mr {
+	@include modifiers(
+		$map: $spacing-map,
+		$attribute: ('margin-right'),
+		$prefix: '-'
+	);
+}

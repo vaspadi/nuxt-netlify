@@ -1,0 +1,70 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+
+  li {
+    font-size: 24px;
+    color: rgba($title-color, 0.4);
+
+    @media screen and(max-width: 540px) {
+      font-size: 14px;
+    }
+
+    &:hover,
+    &:focus,
+    &.active {
+      color: $main-blue;
+    }
+
+    a {
+      padding: 8px;
+      cursor: pointer;
+    }
+  }
+
+  &__prev,
+  &__next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border: 1px solid $border-base-color;
+    border-radius: 50%;
+
+    @media screen and (max-width: 960px) {
+      width: 56px;
+      height: 56px;
+    }
+
+    @media screen and (max-width: 540px) {
+      width: 40px;
+      height: 40px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .img {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-image: url('@/assets/imgs/svg/arrow-left-gray.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &__next {
+    transform: rotate(180deg)
+  }
+}

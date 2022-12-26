@@ -1,0 +1,62 @@
+ {
+  "title": "Axle mini — приложение для <mark>сотрудников</mark> и <mark>руководителей</mark>",
+  "ctaMobileBtn": "Подробнее о приложении",
+  "features": [
+    {
+      "isAboutAppBlock": false,
+      "img": {
+        "src": "/assets/imgs/bg-index.png",
+        "alt": ""
+      }
+    },
+    {
+      "isAboutAppBlock": false,
+      "title": "Работа со складом",
+      "description": "Проведение инвентаризаций, списание просрочки, приём поставок и просмотр складских остатков в реальном времени.",
+      "mobileImg": "/assets/imgs/bg-index.png"
+    },
+    {
+      "isAboutAppBlock": true,
+      "title": "Подробнее<br> о приложении"
+    },
+    {
+      "isAboutAppBlock": false,
+      "title": "Онлайн-касса",
+      "description": "Работа и расчет клиента с телефона или планшета, средний чек и история заказов, идентификация клиента и печать чеков",
+      "mobileImg": "/assets/imgs/bg-index.png"
+    },
+    {
+      "isAboutAppBlock": false,
+      "img": {
+        "src": "/assets/imgs/bg-index.png",
+        "alt": ""
+      }
+    },
+    {
+      "isAboutAppBlock": false,
+      "title": "Финансы",
+      "description": "Сводка по рабочим сменам, бюджетирование, ведение статей расходов и доходов, автоматический расчет ЗП сотрудников",
+      "mobileImg": "/assets/imgs/bg-index.png"
+    },
+    {
+      "isAboutAppBlock": false,
+      "img": {
+        "src": "/assets/imgs/bg-index.png",
+        "alt": ""
+      }
+    },
+    {
+      "isAboutAppBlock": false,
+      "title": "Отчёты и аналитика",
+      "description": "Отчёты продаж в разрезе смены, по клиентам и эффективности сотрудников. Аналитика по клиентам, прайсу и рекламным кампаниям",
+      "mobileImg": "/assets/imgs/bg-index.png"
+    },
+    {
+      "isAboutAppBlock": false,
+      "img": {
+        "src": "/assets/imgs/bg-index.png",
+        "alt": ""
+      }
+    }
+  ]
+}
